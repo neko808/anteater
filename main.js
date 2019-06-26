@@ -72,3 +72,70 @@ function add(){
 
 //funcion del intervalo
 setInterval(add, 3000)
+
+let cardCount = 0;
+let card = 1;
+
+function changeCard(dir){
+    var cardEnv = document.getElementById('card-env');
+    var no = ['cero','one','two','three','four']
+    cardEnv.classList.remove('cero','one','two','three');
+    
+    if(dir == 'next'){
+        if(card == 3){
+            card = 0
+        }
+        card += 1;
+        cardEnv.classList.add(no[card]);
+    }else{
+        if(card == 1){
+            card = 4
+        }
+        card -= 1;
+        cardEnv.classList.add(no[card]);
+    }
+}
+
+
+
+//funcion para usar en el intervalo para los cards
+function addCard(){
+    cardCount += 1;
+    switch (cardCount) {
+        case 1: 
+            cardCount = 1
+            changeCard('next')
+            break;
+        case 4:
+            cardCount = 4
+            changeCard('next')
+            break;
+        case 7:
+            cardCount = 7
+            changeCard('next')
+            break;
+        case 10:
+            console.log('reset')
+            cardCount = 0
+            card = 0
+            break;
+    
+        default:
+            break;
+    }
+}
+
+
+setInterval(addCard, 3000)
+
+
+//menu responsivo
+function openMenu(){
+    let menu = document.getElementById('header');
+
+    if(menu.classList.contains('open')){
+        menu.classList.remove('open');
+    }else{
+        menu.classList.add('open');
+    }
+}

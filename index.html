@@ -5,10 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Anteater</title>
 </head>
 <body>
     <header id="header">
+        <button onclick="openMenu()" class="ham"></button>
+        <div class="wave">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+                    <path class="second" d="M1.02,95.63 C153.34,136.08 203.64,23.58 507.57,86.74 L500.00,0.00 L0.00,0.00 Z"></path>
+                <path d="M-2.62,118.31 C153.34,136.08 109.61,-44.50 500.28,75.89 L500.00,0.00 L0.00,0.00 Z"></path>                
+            </svg>
+        </div>
         <div class="logo">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 1280 1024" style="enable-background:new 0 0 1280 1024;" xml:space="preserve">
@@ -74,9 +82,9 @@
            </svg>
         </div>
         <ul>
-            <li>Features</li>
-            <li>GSA Migration</li>
-            <li>API Reference</li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#gsa">GSA Migration</a></li>
+            <li><a href="#">API Reference</a></li>
             <li><a href="#contacto">Contact Us</a></li>
         </ul>
     </header>
@@ -84,9 +92,18 @@
     <section id="main">
         <nav>
             <ul>
-                <li class="website active" onclick="changeView('website',1)"><img src="img/website.svg" alt="">Website Search</li>
-                <li class="ecommerce" onclick="changeView('ecommerce',4)"><img src="img/ecommerce.svg" alt="">E-Commerce Search</li>
-                <li class="document" onclick="changeView('document',7)"><img src="img/document.svg" alt="">Document Indexing and Recognition</li>
+                <li class="website active" onclick="changeView('website',1)">
+                    <img src="img/website.svg" alt="">
+                    <p>Website Search</p>
+                </li>
+                <li class="ecommerce" onclick="changeView('ecommerce',4)">
+                    <img src="img/ecommerce.svg" alt="">
+                    <p>E-Commerce Search</p>
+                </li>
+                <li class="document" onclick="changeView('document',7)">
+                    <img src="img/document.svg" alt="">
+                    <p class="index">Document Indexing and Recognition</p>
+                </li>
             </ul>
         </nav>
         <div class="demo">
@@ -244,6 +261,51 @@
             </div>
         </div>
         
+    </section>
+
+    <section id="features" class="section features">
+        <div id="card-env" class="cards-env one">
+
+            <div class="arrow prev" onclick="changeCard('prev')"></div>
+
+            <div class="card one">
+                <div class="head">
+                    <div class="icon-wrap">
+                        <img src="img/code.svg" alt="">
+                    </div> 
+                    <h2>Lorem ipsum dolor sit amet consectetur</h2>
+                </div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse, excepturi fugiat libero quae sit blanditiis vel nostrum ut ipsum, voluptatum dicta dolorum nemo iusto! Tempora quod numquam ipsam asperiores!</p>
+                </div>               
+            </div>
+            
+            <div class="card two">
+                <div class="head">
+                    <div class="icon-wrap">
+                        <img src="img/fast.svg" alt="">
+                    </div>                    
+                    <h2>Lorem ipsum dolor</h2>
+                </div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse, excepturi fugiat libero quae sit blanditiis vel nostrum ut ipsum, voluptatum dicta dolorum nemo iusto! Tempora quod numquam ipsam asperiores!</p>
+                </div>               
+            </div>
+
+            <div class="card three">
+                <div class="head">
+                    <div class="icon-wrap">
+                        <img src="img/conexion.svg" alt="">
+                    </div> 
+                    <h2>Lorem ipsum dolor sit amet </h2>
+                </div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse, excepturi fugiat libero quae sit blanditiis vel nostrum ut ipsum, voluptatum dicta dolorum nemo iusto! Tempora quod numquam ipsam asperiores!</p>
+                </div>              
+            </div>
+
+            <div class="arrow next" onclick="changeCard('next')"></div>
+        </div>
     </section>
 
     <section id="gsa">

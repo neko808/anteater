@@ -20,6 +20,7 @@ header {
   transition: all 0.2s ease-in-out;
   width: 100%;
   padding: 20px;
+  z-index: 1000;
 }
 
 .ambos{
@@ -27,8 +28,9 @@ header {
 	justify-content: space-between;
 }
 
-.logo{
-	display: flex;
+header .logo{
+	flex: 1;
+	max-width: 120px;
 }
 
 
@@ -50,18 +52,23 @@ nav.menu ul li{
 nav.menu ul a{
 	text-transform: uppercase;
 	text-decoration: none;
-	color: white;
+	color: #8085b4;
 }
 
-li.different{
+nav.menu ul ul a{
+	color:#1a2751;
+	text-transform: none;
+}
+
+/*li.different{
   border:none;
   position: relative;
-}
-li.different:hover{
+}*/
+/*li.different:hover{
   border: none;
-}
+}*/
 
-.different::after{
+/*.different::after{
   content: '';
   position: absolute;
   width: 0px;
@@ -75,7 +82,81 @@ li.different:hover{
 .different:hover::after{
   width: 50%;
   left: 0;
+}*/
+
+/*.different ul{
+	flex-direction: column;
 }
+
+.different ul li{
+	list-style: none;
+}
+
+nav.menu ul li ul {
+	display: none;
+  position: absolute;
+  background-color: #ebebeb;
+  max-width: 160px;
+  height: auto;
+
+
+  top: 100px;
+  height: 0;
+  opacity: 0;
+
+    transform: translateY(60px);
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+
+}
+
+nav.menu ul li:hover ul {
+	display: block;
+  position: absolute;
+  height: 100%;
+  opacity: 1;
+  top: 30px;
+}*/
+
+
+/*    Nuevos estilos    */
+
+
+.sub-menu-parent {
+  position: relative;
+}
+.sub-menu {
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  /* hides sub-menu */
+  opacity: 0;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 160px;
+  background-color: #eee;
+  transform: translateY(75px);
+  z-index: -1;
+  transition: all 0.2s ease-in-out 0s, visibility 0s linear 0.2s, z-index 0s linear 0.01s;
+}
+.sub-menu-parent:focus .sub-menu,
+.sub-menu-parent:focus-within .sub-menu,
+.sub-menu-parent:hover .sub-menu {
+  visibility: visible;
+  /* shows sub-menu */
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(50px);
+  transition-delay: 0s, 0s, 0.3s;
+  /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+.sub-menu li{
+	text-align: left;
+	margin-left: 16px;
+}
+
+
 
 
 header .logo {
@@ -85,7 +166,7 @@ header .logo {
 }
 
 header.minum .logo {
-	transform: scale(0.8) translate(-20px, -25px); 
+	transform: scale(0.8) translate(-20px, -3px); 
 }
 
 header .texto{
@@ -94,10 +175,13 @@ header .texto{
 }
 
 header .xflex{
+	flex: 1;
 	transition: opacity 0.5s ease-in-out; 
 	position: relative;
 	top: 20px;
 	opacity: 1;
+	display: flex;
+	justify-content: center;
 }
 
 header.water .texto{
@@ -112,11 +196,11 @@ header.basic .xflex{
 
 
 .nav-up {
-  top: -40px;
+  top: -35px;
 }
 
 .nav-down{
-	background: #ebab42;
+	background: #1a2751;
 }
 
 .wrapper{
@@ -149,18 +233,28 @@ main {
 
 .spacer{
 	height: 300px;
+	width: 100%;
 }
 
-.flexible{
-	border: 1px solid #ebab42;
+.spacer2{
+	height: 80px;
+	width: 100%;
 }
+
+.spacer3{
+	height: 60px;
+	width: 100%;
+}
+
+/*.flexible{
+	border: 1px solid #ebab42;
+}*/
 
 .wflex{
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
 	height: auto;
-	border: 1px solid #ebab42;
 	margin-top: 100px;
 	align-items: center;
 }
@@ -202,7 +296,19 @@ p{
 
 	.element{
 		flex: 0 1 calc(50% - 16px);
+		-webkit-transition: all 0.2s ease-out;
+		-moz-transition: all 0.2s ease-out;
+		-o-transition: all 0.2s ease-out;
+		transition: all 0.2s ease-out;
+		transform: translateY(0px);
 	}
+
+/*	.element:hover{
+		transform: translateY(-16px);
+		-webkit-box-shadow: 8px 8px 33px -8px rgba(0,0,0,0.66);
+		-moz-box-shadow: 8px 8px 33px -8px rgba(0,0,0,0.66);
+		box-shadow: 8px 8px 33px -8px rgba(0,0,0,0.66);
+	}*/
 
 }
 
@@ -216,7 +322,7 @@ p{
 
 section {
 	width:1140px;
-	height: 3000px;
+	height: 1000px;
 	margin: auto;
 	background: #1a2751;
 	text-align: center;
@@ -266,18 +372,23 @@ ul.ball li {
 
 .boton {
 	background: transparent;
-	color: #01ecfa;
+	width: 152px;
 	border: 1px solid #01ecfa;
 	border-radius: 50px;
-	padding: 0.6rem 1.5rem;
-	font-family: 'Roboto', sans-serif;
-	font-size: 15px;
+	padding: 0.8rem 1.7rem;
 	outline: none;
 	cursor: pointer;
 	position: relative;
 	transition: 0.2s ease-in-out;
 	letter-spacing: 2px;
 	margin-top: 50px;
+}
+
+.boton a{
+	color: #01ecfa;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	text-decoration: none;
 }
 
 .parrafo{
@@ -293,6 +404,14 @@ ul.ball li {
 	height: 2px;
 	background-color: #01ecfa;
 	margin: 40px 0px;
+}
+
+.pleca2{
+	width: 2px;
+	height:46px;
+	background-color: #01ecfa;
+	position: relative;
+	top: 115px;
 }
 
 .clientes{
@@ -357,10 +476,29 @@ ul.ball li {
 	padding: 130px 40px;
 }
 
+.box1{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	padding: 40px 40px 20px 40px;
+	text-align: center;
+}
+
+.box1 h2{
+	width: 100%;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.5em;
+	font-weight: 400;
+}
+
 .box h2{
 	font-family: 'Roboto', sans-serif;
 	font-size: 2.5em;
 	line-height: 23px;
+	font-weight: 400;
 }
 
 .box p{
@@ -402,4 +540,104 @@ ul.ball li {
 	width: 300px;
 }
 
-eef2f3
+.flecha{
+	width: 15px;
+}
+
+.login{
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	top: 20px;
+}
+
+.login li{
+	list-style: none;
+	color: #8085b4;
+	padding: 8px 0;
+	margin-left: 20px;
+}
+
+.boton span{
+	left: 0px;
+	width: 28px;
+	position: relative;
+    -webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+.boton:hover span{
+	left: 5px;
+}
+
+
+
+
+@media screen and (min-width: 480px) {
+
+
+
+}
+
+@media screen and (min-width: 768px){
+
+   .sflexible{
+		display: flex;
+		flex-wrap: wrap;
+		background-color: #2b3563;
+		-webkit-box-shadow: 8px 8px 33px -8px rgba(0,0,0,0.66);
+		-moz-box-shadow: 8px 8px 33px -8px rgba(0,0,0,0.66);
+		box-shadow: 8px 8px 33px -8px rgba(0,0,0,0.66);
+	}
+
+	.bbox{
+		box-sizing: border-box;
+		padding: 30px;
+		flex: 1;
+	}
+
+}
+
+
+.bbox h2{
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.1em;
+	font-weight: 400;
+	color: white;
+}
+
+
+.bbox h3{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	color: #6e75b4;
+}
+
+.bbox ul{
+	text-align: right;
+}
+
+.bbox ul li{
+	list-style: none;
+	color: #d7dcfa;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	line-height: 26px;
+	font-weight: 400;
+}
+
+.computer{
+	max-width: 300px;
+	margin-top: 40px;
+}
+
+.centered{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+

@@ -1,0 +1,246 @@
+/*    Form Styles   */
+
+.app-form-group {
+  margin-bottom: 20px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-control {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 16px 20px;
+  background: none;
+  border: none;
+  border: 1px solid #6e75b4;
+  border-radius: 50px;
+  color: #959ffa;
+  font-size: 14px;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::-webkit-input-placeholder {
+  color: #959ffa;
+}
+
+.app-form-control:-ms-input-placeholder {
+  color: #959ffa;
+}
+
+.app-form-control::-ms-input-placeholder {
+  color: #959ffa;
+}
+
+.app-form-control::placeholder {
+  color: #959ffa;
+}
+
+.app-form-control:focus {
+  border-color: #fff;
+}
+
+.app-form-button{
+	display: inline-block;
+	background: #01ecfa;
+	border: 1px solid #01ecfa;
+	border-radius: 50px;
+	padding: 0.8rem 1.7rem;
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	transition: 0.2s ease-in-out;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	color: #1a2751;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.padded{
+	padding-left: 0;
+	border: 1px solid red;
+}
+
+.app-form h3{
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6em;
+}
+
+.margen{
+	margin-top: 56px;
+}
+
+
+/*  inicia estilos para mensajes  */
+
+
+.app-form-control2 {
+	box-sizing: border-box;
+  width: 300px;
+  padding: 14px 20px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #6e75b4;
+  color: #959ffa;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control2::-webkit-input-placeholder {
+  color: #959ffa;
+}
+
+.app-form-control2:-ms-input-placeholder {
+  color: #959ffa;
+}
+
+.app-form-control2::-ms-input-placeholder {
+  color: #959ffa;
+}
+
+.app-form-contro2::placeholder {
+  color: #959ffa;
+}
+
+.app-form-control2:focus {
+  border-bottom-color: #fff;
+}
+
+.box3{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+
+.bbox .logo{
+	max-width: 90px;
+}
+
+.bbox .logo2{
+	max-width: 140px;
+	margin-left: 30px;
+	position: relative;
+	top: -8px;
+}
+
+.bbox .logo3{
+	max-width: 105px;
+	margin-left: 29px;
+	position: relative;
+	top: -8px;
+}
+
+.last{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+	align-items: flex-end;
+}
+
+.w100{
+	width: 100%;
+}
+
+.app-form-button span{
+	left: 0px;
+	width: 28px;
+	position: relative;
+    -webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+.app-form-button:hover span{
+	left: 5px;
+}
+
+.lightblue{
+	width: 100%;
+	background-color: #2b3563;
+}
+
+.s-fondo{
+	width: 100%;
+	position: absolute;
+	top: 1360px;
+	z-index: 0;
+}
+
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 30px 0px;
+}
+
+footer h3{
+	color: #6e75b4;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.box6{
+	width: 100%;
+}
+
+.roll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+  border: 1px solid red;
+}
+
+.roll h2{
+	font-family: 'Roboto', sans-serif;
+	font-size: 2em;
+	color: #fff;
+	font-weight: 400;
+	border: 1px solid red;
+}
+
+.roll h2 span{
+	color: #6e75b4; 
+}
+
+.boton3 {
+	display: inline-block;
+	background: #01ecfa;
+	border-radius: 50px;
+	padding: 0.8rem 1.7rem;
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	 -webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
+	transition: 0.2s ease-in-out;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.boton3 a{
+	color: #1a2751;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14.5px;
+	font-weight: 400;
+}
+
+.yellow{
+	color: #fabc05;
+}

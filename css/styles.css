@@ -10,13 +10,14 @@ body {
   color: white;
 }
 header {
-/*		  background: #1a2751;*/
   box-sizing: border-box;
   color: rgba(255,255,255,1);
-  height: 50px;
+  height: 81px;
   position: fixed;
   top: 0;
-/*		  transition: top 0.2s ease-in-out;*/
+  	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
   padding: 20px;
@@ -26,13 +27,13 @@ header {
 .ambos{
 	display: flex;
 	justify-content: space-between;
+
 }
 
 header .logo{
 	flex: 1;
 	max-width: 120px;
 }
-
 
 nav.menu ul{
 	display: flex;
@@ -47,6 +48,18 @@ nav.menu ul li{
 	font-weight: 400;
 	color: #8085b4;
 	margin-left: 35px;
+	 -webkit-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	transition: all 0.1s ease-in;
+}
+
+nav.menu ul li:hover{
+    color: #01ecfa;
+}
+
+nav.menu ul li.sub-menu-parent:hover{
+    color: #01ecfa;
 }
 
 nav.menu ul a{
@@ -138,6 +151,9 @@ nav.menu ul li:hover ul {
   background-color: #eee;
   transform: translateY(75px);
   z-index: -1;
+  -webkit-transition: all 0.2s ease-in-out 0s, visibility 0s linear 0.2s, z-index 0s linear 0.01s;
+	-moz-transition: all 0.2s ease-in-out 0s, visibility 0s linear 0.2s, z-index 0s linear 0.01s;
+	-o-transition: all 0.2s ease-in-out 0s, visibility 0s linear 0.2s, z-index 0s linear 0.01s;
   transition: all 0.2s ease-in-out 0s, visibility 0s linear 0.2s, z-index 0s linear 0.01s;
 }
 .sub-menu-parent:focus .sub-menu,
@@ -147,7 +163,13 @@ nav.menu ul li:hover ul {
   /* shows sub-menu */
   opacity: 1;
   z-index: 1;
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -o-transform: translateY(50px);
   transform: translateY(50px);
+  -webkit-transition-delay: 0s, 0s, 0.3s;
+  -moz-transition-delay: 0s, 0s, 0.3s;
+  -o-transition-delay: 0s, 0s, 0.3s;
   transition-delay: 0s, 0s, 0.3s;
   /* this removes the transition delay so the menu will be visible while the other styles transition */
 }
@@ -162,26 +184,36 @@ nav.menu ul li:hover ul {
 header .logo {
     position: relative;
     width: 120px;
+    -webkit-transition: transform 0.5s cubic-bezier(0.5, 0.01, 0.38, 0.86);
+	-moz-transition: transform 0.5s cubic-bezier(0.5, 0.01, 0.38, 0.86);
+	-o-transition: transform 0.5s cubic-bezier(0.5, 0.01, 0.38, 0.86);
     transition: transform 0.5s cubic-bezier(0.5, 0.01, 0.38, 0.86); 
 }
 
 header.minum .logo {
-	transform: scale(0.8) translate(-20px, -3px); 
+	transform: scale(0.8) translate(-20px, 1px); 
 }
 
 header .texto{
+	 -webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
 	transition: opacity 0.5s ease-in-out; 
 	opacity: 1;
 }
 
 header .xflex{
 	flex: 1;
+	    -webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
 	transition: opacity 0.5s ease-in-out; 
 	position: relative;
 	top: 20px;
 	opacity: 1;
 	display: flex;
 	justify-content: center;
+	height: 50px;
 }
 
 header.water .texto{
@@ -192,6 +224,7 @@ header.basic .xflex{
 	padding-top: 0;
 	position: relative;
 	opacity: 1;
+	/*background-color: #1a2751;*/
 }
 
 
@@ -371,20 +404,31 @@ ul.ball li {
 }*/
 
 .boton {
-	background: transparent;
-	width: 152px;
-	border: 1px solid #01ecfa;
+	display: inline-block;
+	background: #01ecfa;
 	border-radius: 50px;
 	padding: 0.8rem 1.7rem;
 	outline: none;
 	cursor: pointer;
 	position: relative;
+	 -webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
 	transition: 0.2s ease-in-out;
 	letter-spacing: 2px;
 	margin-top: 50px;
+	text-transform: uppercase;
 }
 
 .boton a{
+	color: #1a2751;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14.5px;
+	font-weight: 400;
+}
+
+.send{
 	color: #01ecfa;
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
@@ -394,7 +438,7 @@ ul.ball li {
 .parrafo{
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	color: #6e75b4;
+	color: #FFF;
 	font-weight: 400;
 	line-height: 28px;
 }
@@ -412,6 +456,12 @@ ul.ball li {
 	background-color: #01ecfa;
 	position: relative;
 	top: 115px;
+}
+
+.pleca3{
+	width: 50px;
+	height: 2px;
+	background-color: #01ecfa;
 }
 
 .clientes{
@@ -460,7 +510,6 @@ ul.ball li {
 }
 
 .element h4{
-	color: #445c9a;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	color: #6e75b4;
@@ -474,6 +523,8 @@ ul.ball li {
 	color: white;
 	text-align: center;
 	padding: 130px 40px;
+	position: relative;
+	z-index: 10;
 }
 
 .box1{
@@ -532,7 +583,6 @@ ul.ball li {
 .sbox{
 	flex: 1;
 	width: 50%;
-	border: 1px solid red;
 	text-align: center;
 }
 
@@ -586,10 +636,6 @@ ul.ball li {
    .sflexible{
 		display: flex;
 		flex-wrap: wrap;
-		background-color: #2b3563;
-		-webkit-box-shadow: 8px 8px 33px -8px rgba(0,0,0,0.66);
-		-moz-box-shadow: 8px 8px 33px -8px rgba(0,0,0,0.66);
-		box-shadow: 8px 8px 33px -8px rgba(0,0,0,0.66);
 	}
 
 	.bbox{
@@ -616,8 +662,12 @@ ul.ball li {
 	color: #6e75b4;
 }
 
-.bbox ul{
+.right{
 	text-align: right;
+}
+
+.left{
+	text-align: left;
 }
 
 .bbox ul li{
@@ -634,10 +684,31 @@ ul.ball li {
 	margin-top: 40px;
 }
 
+.ecommerce{
+	max-width: 300px;
+	margin-top: 40px;
+}
+
 .centered{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+}
+
+.cfondo{
+	background-color: #2b3563;
+	-webkit-box-shadow: 8px 8px 33px -8px rgba(0,0,0,0.66);
+	-moz-box-shadow: 8px 8px 33px -8px rgba(0,0,0,0.66);
+	box-shadow: 8px 8px 33px -8px rgba(0,0,0,0.66);
+}
+
+.fondo{
+	background-color: #1a2751;
+	  	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
 }
 

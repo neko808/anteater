@@ -1,11 +1,11 @@
 
-$(window).scroll(function() {
-    if($(window).scrollTop() < 240) {
-        $("header").addClass("active");
-    } else {
-       $("header").removeClass("active");
-    }
-});
+// $(window).scroll(function() {
+//     if($(window).scrollTop() < 240) {
+//         $("header").addClass("active");
+//     } else {
+//        $("header").removeClass("active");
+//     }
+// });
 
 window.onscroll = function() {
     scrollFunction()
@@ -16,11 +16,13 @@ function scrollFunction() {
     document.getElementById("header").classList.add('minum');
     document.getElementById("header").classList.add('water');
     document.getElementById("header").classList.add('basic');
+    document.getElementById("header").classList.add('fondo');
     console.log('scroll')
   } else {
     document.getElementById("header").classList.remove('minum');
     document.getElementById("header").classList.remove('water');
     document.getElementById("header").classList.remove('basic');
+    document.getElementById("header").classList.remove('fondo');
   }
 }
 
@@ -48,9 +50,10 @@ function hasScrolled() {
     if(Math.abs(lastScrollTop - st) <= delta)
         return;
     
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+    //if (st > lastScrollTop && st > navbarHeight){
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
         // Scroll Down
         // $('header').removeClass('nav-down').addClass('nav-up');
         $('header').addClass('nav-up');

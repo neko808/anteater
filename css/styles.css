@@ -470,8 +470,54 @@ ul.ball li {
 
 .interjet{
 	width: 160px;
-	opacity: 0.3;
+	opacity: 0.6;
 }
+
+.senado{
+	width: 90px;
+	opacity: 0.6;
+}
+
+.solmexico{
+	width: 160px;
+	opacity: 0.6;
+}
+
+.telmex{
+	width: 160px;
+	opacity: 0.6;
+}
+
+.citi{
+	width: 180px;
+	opacity: 0.6;
+}
+
+.lacomer{
+	width: 160px;
+	opacity: 0.6;
+}
+
+.banco{
+	width: 160px;
+	opacity: 0.6;
+}
+
+.televisa{
+	width: 160px;
+	opacity: 0.6;
+}
+
+.noticias{
+	width: 130px;
+	opacity: 0.6;
+}
+
+.banorte{
+	width: 130px;
+	opacity: 0.6;
+}
+
 
 .icono{
 	width: 70px;
@@ -604,8 +650,13 @@ ul.ball li {
 .login li{
 	list-style: none;
 	color: #8085b4;
-	padding: 8px 0;
-	margin-left: 20px;
+	padding: 6px 16px;
+	margin-left: 0px;
+}
+
+.sline{
+	border: 2px solid #01ecfa;
+	border-radius: 50px;
 }
 
 .boton span{

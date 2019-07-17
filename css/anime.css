@@ -1,7 +1,19 @@
 
 
 svg{
-  width: 45%;
+  width: 516px;
+}
+
+@media screen and (max-width:480px){
+    svg{
+        width: 260px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px){
+    svg{
+        width: 400px;
+    }
 }
 
 .eater{
@@ -28,7 +40,6 @@ svg{
 	flex: 0 1 360px;
     display: flex;
     align-items: center;
-/*    border: 1px solid red;*/
 }
 
 .whyTable .whyColumnLeft h2 {
@@ -48,9 +59,11 @@ svg{
 }
 
 .icons .iconRow {
+    display: flex;
+    flex-wrap: wrap;
     padding: 12px 0;
     position: relative;
-/*    border: 1px solid red;*/
+    align-items: center;
 }
 
 .icons .iconRow .circle {
@@ -58,7 +71,6 @@ svg{
     width: 75px;
     height: 75px;
     position: relative;
-/*    border: 1px solid blue;*/
 }
 
 .icons .iconRow .circle svg {
@@ -69,7 +81,7 @@ svg{
 .icons .iconRow .title {
     display: inline-block;
     vertical-align: top;
-    padding-left: 30px;
+    padding-left: 23px;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -78,7 +90,6 @@ svg{
 
 .icons .iconRow.middle {
     padding-left: 20px;
-/*    border: 1px solid red;*/
 }
 
 .icons .iconRow.icon1 .circle img {
@@ -109,6 +120,26 @@ svg{
     transition-delay: 0.3s;
 }
 
+@media screen and (max-width:480px){
+   .icons .iconRow .circle {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        position: relative;
+    }
+
+    .icons .iconRow .circle img {
+        width: 60px;
+    }
+
+    .whySection .leftSvg {
+        position: absolute;
+        left: 0;
+        z-index: 0;
+        top: -165px;
+    }
+}
+
 .xbox {
   width:100px;
   height:100px;
@@ -119,10 +150,6 @@ svg{
   line-height: 100px;
   font-size: 24px;
   font-family: 'Roboto', sans-serif;
-}
-
-.blue {
-  background-color:navy;
 }
 
 .height-marker{
@@ -153,19 +180,32 @@ svg{
 
 .whySection .rightPhoto {
     position: absolute;
-    right: -320px;
+    right: 0;
     z-index: 0;
     top: 0px;
-    height: 443px;
-    width: 600px;
-/*    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;*/
-    background: url(../img/laptop.jpg) center center no-repeat;
+    width: 356px;
+    height: 500px;
+    background: url(../img/laptop2.jpg) center center no-repeat;
     background-size: auto;
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
     background-size: cover !important;
+    display: none;
+}
+
+@media screen and (min-width: 480px){
+    .whySection .rightPhoto {
+        display: none;
+    }
+
+    .whyTable .whyColumnLeft br {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .whySection .rightPhoto {
+        display: block;
+    }
 }

@@ -1,0 +1,50 @@
+
+/* Lists */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+#container {
+  position: relative;
+  padding-top: 0px;
+  border: 1px solid transparent;
+}
+
+/* Menu Button */
+.menu-btn {
+  display: none;
+  position: fixed;
+  top: 26px;
+  width: 50px;
+  height: 40px;
+  background: transparent;
+  color: #FFF;
+  text-align: center;
+  cursor: pointer;
+  border: 0px;
+  right: 2px;
+/*  border: 1px solid yellow;*/
+  z-index: 1000;
+}
+.menu-btn:hover {
+  opacity: 1;
+}
+
+.menu-btn:focus{
+  outline: none;
+}
+
+.sleft{
+  position: fixed;
+  right: 300px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+}
+

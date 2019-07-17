@@ -10,7 +10,8 @@
 
 .app-form-control {
   box-sizing: border-box;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   padding: 16px 20px;
   background: none;
   border: none;
@@ -62,7 +63,6 @@
 
 .padded{
 	padding-left: 0;
-	border: 1px solid red;
 }
 
 .app-form h3{
@@ -80,8 +80,9 @@
 
 
 .app-form-control2 {
-	box-sizing: border-box;
-  width: 300px;
+  box-sizing: border-box;
+  max-width: 300px;
+  width: 100%;
   padding: 14px 20px;
   background: none;
   border: none;
@@ -130,6 +131,14 @@
 	top: -8px;
 }
 
+.bbox ul li{
+	padding-right: 28px;
+}
+
+.bbox ul li:nth-child(1){
+	border-right: 2px solid #01ecfa;
+}
+
 .bbox .logo3{
 	max-width: 105px;
 	margin-left: 29px;
@@ -161,11 +170,6 @@
 
 .app-form-button:hover span{
 	left: 5px;
-}
-
-.lightblue{
-	width: 100%;
-	background-color: #2b3563;
 }
 
 .s-fondo{
@@ -201,9 +205,10 @@ footer h3{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   width: 100%;
   padding: 20px 0;
-  border: 1px solid red;
+  box-sizing: border-box;
 }
 
 .roll h2{
@@ -211,7 +216,6 @@ footer h3{
 	font-size: 2em;
 	color: #fff;
 	font-weight: 400;
-	border: 1px solid red;
 }
 
 .roll h2 span{
@@ -247,6 +251,184 @@ footer h3{
 	font-weight: 400;
 }
 
-.yellow{
-	color: #fabc05;
+.boton3 span{
+	left: 0px;
+	width: 28px;
+	position: relative;
+    -webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+.boton3:hover span{
+	left: 5px;
+}
+
+.blue{
+	color: #01ecfa;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+}
+
+
+/*   Estilos para Logos   */
+
+.logos-flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 130px;
+}
+
+.logos-flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 80px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.logos-flex-item img {
+  transition: opacity 0.1s ease-in-out;
+}
+
+.logos-flex-item img.top:hover {
+  opacity: 0;
+}
+
+.medios{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 40px;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .logos-flex-container {
+  	padding: 0 26px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logos-flex-item {
+  	text-align: center;
+  	width: 100%;
+  }
+
+  .roll{
+  	padding: 0 16px;
+  }
+
+  .boton3{
+  	margin-top: 26px;
+  }
+
+  .padded{
+  	padding: 0 16px;
+  }
+
+  .medios{
+  	justify-content: flex-start;
+  	margin-top: 60px;
+  }
+
+  .bbox .logo{
+		max-width: 70px;
+  }
+
+  .bbox .logo2{
+		max-width: 110px;
+		margin-left: 30px;
+		position: relative;
+		top: -8px;
+  }
+
+  .bbox .logo3{
+		max-width: 90px;
+		margin-left: 30px;
+		position: relative;
+		top: -8px;
+  }
+}
+
+.nube{
+	max-width: 265px;
+	width: 100%;
+}
+
+.five{
+	max-width: 145px;
+	width: 100%;
+}
+
+.haute{
+	width: 100%;
+	height: 160px;
+}
+
+.medios h3{
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em;
+}
+
+.media{
+	width: 32px;
+	height: 32px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.contactus{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.contactus h3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.1em;
+	font-weight: 400;
+	color: white;
+	margin-left: 26px;
+	margin-top: 50px;
+	cursor: pointer;
+	padding: 8px 5px;
+}
+
+.contactus h3:hover{
+	color: #01ecfa;
+}
+
+.hamburg{
+	width: 23px;
+}
+
+#features:focus, #ecommerce:focus, #web:focus, #document:focus{
+	outline: none;
+}
+
+.wrapper8{
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper8 .spacer{
+		height: 140px;
+	}
 }

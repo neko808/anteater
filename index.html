@@ -9,16 +9,32 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/styles2.css">
 	<link rel="stylesheet" type="text/css" href="css/anime.css">
+
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/pushy.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">  
-<!-- 	<link rel="stylesheet" type="text/css" href="xjs/aos.css"> -->
 
 </head>
 <body>
 
-<img class="foto" src="fotos/fondo.svg">
-<header id="header">
+	<!-- Menu Button -->
+    <button class="menu-btn" trigger="0">
+    	  <div id="nav-icon1">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+		  </div>
+    </button>
+
+    <!--    Inicia Header    -->
+	<header id="header">
+
 	<div class="wrapper">
+
 		<div class="ambos">
 			<div class="logo">
 				<svg class="eater" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -78,34 +94,18 @@
 			<div class="xflex">
 				<nav class="menu">
 					<ul>
-				   	 <a href="#"><li class="different">Features</li></a>
-				   	 <a href="#">
-				   	   <li class="sub-menu-parent" tab-index="0">
-				       Migration
+				   	 <a href="#features"><li class="different">Features</li></a>
+				   	 <a href="#"><li class="different">GSA Migration</li></a>
+				     <a href="#"><li class="sub-menu-parent" tab-index="0">
+				       <p>Search</p>
 					       <ul class="sub-menu">
-					         <li><a href="#">GSA Migration</a></li>
-					         <li><a href="#">Endeca Migration</a></li>
+					         <a href="#ecommerce"><li>Ecommerce</li></a>
+					         <a href="#web"><li>Web</li></a>
+					         <a href="#document"><li>Document</li></a>
 					       </ul>
 				       </li>
 				     </a>
-				     <a href="#">
-				   	   <li class="sub-menu-parent" tab-index="0">
-				       Search
-					       <ul class="sub-menu">
-					         <li><a href="#">Ecommerce</a></li>
-					         <li><a href="#">Web</a></li>
-					         <li><a href="#">Document</a></li>
-					       </ul>
-				       </li>
-				     </a>
-				     <a href="#">
-				   	   <li class="sub-menu-parent" tab-index="0">
-				       Developer
-					       <ul class="sub-menu">
-					         <li><a href="#">API Reference</a></li>
-					       </ul>
-				       </li>
-				     </a>
+				     <a href="#"><li class="different">Developer</li></a>
 				   	 <a href="#"><li class="different">Pricing</li></a>
 				   	 
 				   </ul>
@@ -125,9 +125,46 @@
 
 
 
+        <nav class="pushy pushy-right" data-focus="#first-link">
+            <div class="pushy-content">
+                <ul>
+                	<li class="pushy-link"><a href="#">Features</a></li>
+                    <li class="pushy-link"><a href="#">GSA Migration</a></li>
+                    <li class="pushy-submenu">
+                        <button>Search</button>
+                        <ul>
+                            <li class="pushy-link"><a href="#">Ecommerce</a></li>
+                            <li class="pushy-link"><a href="#">Web</a></li>
+                            <li class="pushy-link"><a href="#">Document</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-link"><a href="#">Developer</a></li>
+                    <li class="pushy-link"><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    <!--     <div class="site-overlay">
+        	    <!-- Menu Button -->
+       
+
+        <div id="container">
+            
+
+ 
+
+
+        
+
+
+<img class="foto" src="fotos/fondo.svg">
+
+
+
+
 <div class="wrapper">
 	<div class="wflex">
-		<div class="piece">
+		<div class="piece cielo">
 				<h2>Simply the most trustable</h2>
 				<span class="next">next generation search tool</span>
 				<div class="pleca"></div>
@@ -135,34 +172,20 @@
 					DOM render state, follow robots.txt and sitemap 
 					and setup crawl frequency.
 				</div>
-			<div class="boton" name="trial">
-				<a href="#" target="blank" tabindex="0">
-					Start free trial
-					<span><img class="flecha" src="img/flecha.svg"></span>
-				</a>
-			</div>
+				<div class="contactus">
+					<div class="boton" name="trial">
+						<a href="#" target="blank" tabindex="0">
+							Start free trial
+							<span><img class="flecha" src="img/flecha.svg"></span>
+						</a>
+					</div>
+					<h3>Contact us</h3>
+				</div>
 		</div>
-		<div class="piece">
-			<div class="cloud">
+		<div class="piece cielo2">
+            <div class="scloud">
 				<img src="img/Google-Cloud.png">
-		    </div>
-		</div>
-	</div>
-</div>
-
-<div class="wrapper">
-	<div class="flexible">
-		<div class="clientes">
-			<img src="img/interjet.png" class="interjet">
-			<img src="fotos/senado.png" class="senado">
-			<img src="fotos/solmexico.png" class="solmexico">
-			<img src="fotos/telmex.png" class="telmex">
-			<img src="fotos/citi.png" class="citi">
-			<img src="fotos/lacomer.png" class="lacomer">
-			<img src="fotos/banco.png" class="banco">
-			<img src="fotos/televisa.png" class="televisa">
-			<img src="fotos/noticias.png" class="noticias">
-			<img src="fotos/banorte.png" class="banorte">
+            </div>
 		</div>
 	</div>
 </div>
@@ -170,17 +193,7 @@
 
 
 <div class="wrapper">
-
-
-
-
-
-</div>
-
-
-
-<div class="wrapper">
-	    <div class="box1">
+	    <div id="features" class="box1">
 	    	<h2>Ready to use smart tool</h2>
 	    	<div class="pleca"></div>
 	    </div>
@@ -207,89 +220,12 @@
 </div>
 
 
-<!-- <img class="s-fondo" src="img/lightblue.png"> -->
-<div class="lightblue">
-	<div class="wrapper">
-		<div class="flexible">
-			<div class="box">
-				<h2>Stable Searching Platform</h2>
-				<h4 class="yellow">Powered by Google Cloud</h4>
-				<p>Stable and easy-to-use interface and personalized user experience which offers a better search experience.<br>It is powered by Google Cloud.</p>
-			</div>
-			<div class="sbox">
-				<img src="img/color-cloud.png">
-			</div>
-			<div class="sbox">
-			</div>
-		</div>
-		<div class="spacer3"></div>
-	</div>
-</div>
-
-<div class="wrapper">
-	<div class="sflexible cfondo">
-		<div class="bbox right">
-			<div class="spacer2"></div>
-			<ul>
-				<li>Next generation crawler, we can follow javascript generated links, make thumbnails of final DOM render state, follow robots.txt and sitemap and setup crawl frequency</li><br>
-				<li>Custom search relevancy algorithm</li>
-			</ul>
-		</div>
-		<div class="pleca2"></div>
-		<div class="bbox">
-			<h3>Website</h3>
-			<h2>Website Search</h2>
-			<div class="centered">
-				<img class="computer" src="img/computer.png">
-		    </div>
-	    </div>
-	</div>
-</div>
-
-<div class="wrapper">
-	<div class="sflexible">
-		<div class="spacer2"></div>
-		<div class="bbox">
-			<h3>Ecommerce</h3>
-			<h2>Ecommerce Search</h2>
-			<div class="centered">
-				<img class="ecommerce" src="img/ecommerce.png">
-		    </div>
-	    </div>
-	    <div class="bbox left">
-			<div class="spacer2"></div>
-			<ul>
-				<li>Crawl any kind of database with our custom connectors</li><br>
-				<li>Lorem ipsum dolor sit neque facilis laboriosam illum eligendi sed</li>
-			</ul>
-		</div>
-		<div class="spacer2"></div>
-	</div>
-</div>
-
-<div class="wrapper">
-	<div class="sflexible cfondo">
-		<div class="bbox right">
-			<div class="spacer2"></div>
-			<ul>
-				<li>Can index content inside a PDF, doc, xls, ppt</li><br>
-				<li>Can apply OCR with machine learning techniques to recognize even a scanned file.</li>
-			</ul>
-		</div>
-		<div class="pleca2"></div>
-		<div class="bbox">
-			<h3>Document</h3>
-			<h2>Document Index<br>and Recognition</h2>
-			<div class="centered">
-				<img class="computer" src="img/computer.png">
-		    </div>
-	    </div>
-	</div>
-</div>
 
 
-<div class="wrapper">
-	<div class="spacer">
+
+<div class="wrapper8">
+	<div class="spacer"></div>
+	<div class="spacer2"></div>
 </div>
 
 
@@ -299,7 +235,7 @@
 
 
 <div class="wrapper">
-<div class="section fp-auto-height fp-section fp-table" data-anchor="whyPage" style="height: 861px;">
+<div class="section fp-auto-height fp-section fp-table" data-anchor="whyPage" style="height: 600px;">
 
     <div class="whySection" data-parallax="{&quot;y&quot;: -40}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
         <div class="leftSvg">
@@ -313,11 +249,6 @@
 			<path id="dot3" class="st0" d="M2.3,7.3c131.4,0,238,106.6,238,238s-106.6,238-238,238"/>
 			</svg>
 
-<!--             <svg id="bigCirclesSvg" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 780 1560" enable-background="new 0 0 780 1560" xml:space="preserve">
-                <path class="lineBig" stroke-dasharray="1000 1000" stroke-dashoffset="1000" fill="none" stroke="#3A547A" stroke-width="2" d="M0,6c427.5,0,774,341.5,774,769S427.5,1554,0,1554"></path>
-                <path class="lineMedium" fill="none" stroke="#3A547A" stroke-width="2" stroke-miterlimit="10" d="M0,199.5c320.6,0,580.5,254.9,580.5,575.5S320.6,1360.5,0,1360.5"></path>
-            </svg> -->
-
         </div>
         <div class="rightPhoto"></div>
 
@@ -327,9 +258,6 @@
 
 
 <div class="wrapper2">
-
-
-
 <div class="whyTable">
     <div class="whyColumnLeft">
         <h2>What makes <br>Anteater <br>better than <br>others?</h2>
@@ -399,7 +327,7 @@
 					</svg>
                     <img id="target3" class="target" src="fotos/whyIcon4.svg" alt="">
                 </div>
-                <div class="title">Intuitive <br>framework</div>
+                <div class="title">GSA Migration</div>
             </div>
         </div>
     	
@@ -421,11 +349,139 @@
 
 
 
+	<div class="wrapper m140">
+		<div class="flexible">
+			<div class="box">
+				<h2>Stable Searching Platform</h2>
+				<h4 class="blue">Powered by Google Cloud</h4>
+				<p>Stable and easy-to-use interface and personalized user experience which offers a better search experience.<br>It is powered by Google Cloud.</p>
+			</div>
+				<div class="sbox">
+					<div class="haute"><img src="img/color-cloud.png" class="nube"></div>
+					<h3>With a service from the cloud</h3>
+				</div>
+				<div class="sbox">
+					<div class="haute"><img src="img/five-nines.svg" class="five"></div>
+					<h3>With a service from the cloud</h3>
+				</div>
+		</div>
+	</div>
+
+
+
+<!--      Inicia Descripcion de cada Pilar      -->
+
+
+<div id="web" class="wrapper">
+	<div class="sflexible">
+		<div class="bbox right">
+			<div class="spacer2"></div>
+			<ul>
+				<li>Next generation crawler, we can follow javascript generated links, make thumbnails of final DOM render state, follow robots.txt and sitemap and setup crawl frequency</li><br>
+				<li>Custom search relevancy algorithm</li>
+			</ul>
+		</div>
+		<div class="bbox">
+			<h3>Website</h3>
+			<h2>Website Search</h2>
+			<div class="centered">
+				<img class="computer" src="img/computer.png">
+		    </div>
+	    </div>
+	</div>
+</div>
+
+<div id="ecommerce" class="wrapper m80">
+	<div class="sflexible">
+		<div class="spacer2"></div>
+		<div class="bebox">
+			<h3>Ecommerce</h3>
+			<h2>Ecommerce Search</h2>
+			<div class="centered">
+				<img class="ecommerce" src="img/ecommerce.png">
+		    </div>
+	    </div>
+	    <div class="bebox left">
+			<div class="spacer2"></div>
+			<ul>
+				<li>Crawl any kind of database with our custom connectors</li><br>
+				<li>Lorem ipsum dolor sit neque facilis laboriosam illum eligendi sed</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="document" class="wrapper m80">
+	<div class="sflexible cfondo">
+		<div class="bbox right">
+			<div class="spacer2"></div>
+			<ul>
+				<li class="pencil">Can index content inside a PDF, doc, xls, ppt</li><br>
+				<li>Can apply OCR with machine learning techniques to recognize even a scanned file.</li>
+			</ul>
+		</div>
+		<div class="bbox">
+			<h3>Document</h3>
+			<h2>Document Index<br>and Recognition</h2>
+			<div class="centered">
+				<img class="computer" src="img/computer.png">
+		    </div>
+	    </div>
+	</div>
+</div>
+
+
+
+
+<div class="wrapper">
+	<div class="box1">
+    	<h2>Nuestros clientes</h2>
+        <div class="pleca"></div>
+    </div>
+
+
+<ul class="logos-flex-container">
+    <li class="logos-flex-item">
+      	        <!--  <img src="img/interjet-azul.png" class="interjet"> -->
+      	         <img src="img/interjet-gray.png" class="interjet top">
+    </li>
+    <li class="logos-flex-item">
+      <a href=""><img src="fotos/senado.png" class="senado"></a>
+    </li>
+    <li class="logos-flex-item">
+      <a href=""><img src="fotos/solmexico.png" class="solmexico"></a>
+    </li>
+    <li class="logos-flex-item">
+      <a href=""><img src="fotos/telmex.png" class="telmex"></a>
+    </li>
+    <li class="logos-flex-item">
+      <a href=""><img src="fotos/citi.png" class="citi"></a>
+    </li>
+    <li class="logos-flex-item">
+      <a href=""><img src="fotos/lacomer.png" class="lacomer"></a>
+    </li>
+    <li class="logos-flex-item">
+      <a href=""><img src="fotos/banco.png" class="banco"></a>
+    </li>
+    <li class="logos-flex-item">
+      <a href=""><img src="fotos/televisa.png" class="televisa"></a>
+    </li>
+    <li class="logos-flex-item">
+      <a href=""><img src="fotos/noticias.png" class="noticias"></a>
+    </li>
+    <li class="logos-flex-item">
+      <a href=""><img src="fotos/banorte.png" class="banorte"></a>
+    </li>
+</ul>
+</div>
+
+
+
 
 <div class="wrapper">
 	<div class="sflexible">
 		<div class="roll">
-			<div style="border: 1px solid#ebab42;"><img class="rocket" src="img/rocket.svg"></div>
+			<div><img class="rocket" src="img/rocket.svg"></div>
 			<h2>Ready to roll?<span> Get started for free today.</span></h2>
 		</div>
 		<div class="roll">
@@ -449,7 +505,6 @@
 			</div>
 		</div>
 		<div class="bbox padded">
-			<div class="spacer2"></div>
 			<div class="spacer2"></div>
 	          <div class="app-form">
 	          	    <div class="box3">
@@ -476,6 +531,11 @@
 	              	</div>
 	              </a>
 	            </div>
+	          </div>
+	          <div class="medios">
+	          	<h3>Follow us on</h3>
+		          <a href="#"><img class="media" src="fotos/twitter.svg"></a>
+		          <a href="#"><img class="media" src="fotos/facebook.svg"></a>
 	          </div>
 		</div>
 	</div>
@@ -504,11 +564,14 @@
 	<h3>Copyright © 2019 by Amarello. All Rights Reserved.</h3>
 </footer>
 
+</div>
 
 
-<!-- <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script> -->
+
 <script src="xjs/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="js/scroll.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> -->
 
 
 <script type="text/javascript" src="xjs/jquery.easing.1.3.js"></script>
@@ -570,7 +633,7 @@
 
 
 						// build scene
-						var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 10, offset: 3200, tweenChanges: true})
+						var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 10, offset: 1000, tweenChanges: true})
 										.setTween(tween)
 										.addIndicators() // add indicators (requires plugin)
 										.addTo(controller);
@@ -620,7 +683,9 @@ $(window).on("scroll",function(e){
 
 </script>
 
-
+<script src="xjs/pushy.min.js"></script>
+<script src="xjs/script.js"></script>
+<script src="xjs/target.js"></script>
 
 </body>
 </html>

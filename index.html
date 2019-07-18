@@ -21,16 +21,50 @@
 </head>
 <body>
 
-	<!-- Menu Button -->
+
+
+
+
+
+
+        <nav class="pushy pushy-right" data-focus="#first-link">
+            <div class="pushy-content">
+                <ul>
+                	<li class="pushy-link"><a href="#">Features</a></li>
+                    <li class="pushy-link"><a href="#">GSA Migration</a></li>
+                    <li class="pushy-submenu">
+                        <button>Search</button>
+                        <ul>
+                            <li class="pushy-link"><a href="#ecommerce">Ecommerce</a></li>
+                            <li class="pushy-link"><a href="#web">Web</a></li>
+                            <li class="pushy-link"><a href="#document">Document</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-link"><a href="#">Developer</a></li>
+                    <li class="pushy-link"><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+        </nav>
+
+       
+
+        <div id="container">
+            
+
+ 	<!-- Menu Button -->
     <button class="menu-btn" trigger="0">
-    	  <div id="nav-icon1">
+    	<div id="nav-icon1">
 			  <span></span>
 			  <span></span>
 			  <span></span>
-		  </div>
+	  </div> 
     </button>
 
-    <!--    Inicia Header    -->
+
+        <!-- Site Overlay -->
+        <div class="site-overlay"></div>
+
+        <!--    Inicia Header    -->
 	<header id="header">
 
 	<div class="wrapper">
@@ -114,8 +148,8 @@
 			<div class="sflex">
 				<nav class="smenu">
 					<ul class="login">
-						<li class="sline">Login</li>
-						<li>Signup</li>
+						<a href="#"><li class="sline">Login</li></a>
+						<a href="#"><li>Signup</li></a>
 				    </ul>		
 				</nav>
 			</div>
@@ -124,37 +158,6 @@
 </header>
 
 
-
-        <nav class="pushy pushy-right" data-focus="#first-link">
-            <div class="pushy-content">
-                <ul>
-                	<li class="pushy-link"><a href="#">Features</a></li>
-                    <li class="pushy-link"><a href="#">GSA Migration</a></li>
-                    <li class="pushy-submenu">
-                        <button>Search</button>
-                        <ul>
-                            <li class="pushy-link"><a href="#">Ecommerce</a></li>
-                            <li class="pushy-link"><a href="#">Web</a></li>
-                            <li class="pushy-link"><a href="#">Document</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-link"><a href="#">Developer</a></li>
-                    <li class="pushy-link"><a href="#">Pricing</a></li>
-                </ul>
-            </div>
-        </nav>
-
-    <!--     <div class="site-overlay">
-        	    <!-- Menu Button -->
-       
-
-        <div id="container">
-            
-
- 
-
-
-        
 
 
 <img class="foto" src="fotos/fondo.svg">
@@ -237,7 +240,7 @@
 <div class="wrapper">
 <div class="section fp-auto-height fp-section fp-table" data-anchor="whyPage" style="height: 600px;">
 
-    <div class="whySection" data-parallax="{&quot;y&quot;: -40}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
+    <div id="trigger1" class="whySection" data-parallax="{&quot;y&quot;: -40}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
         <div class="leftSvg">
 
         	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -267,13 +270,6 @@
     	<div class="icons">
             <div class="iconRow icon1">
                 <div class="circle">
-
-<!--                     <svg version="1.1" id="whyCircle1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                        <circle class="circle1" fill="#192538" stroke="#3A547A" stroke-width="2" stroke-miterlimit="10" cx="50" cy="50" r="48"></circle>
-                    </svg> -->
-
-
-
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 viewBox="0 0 40.4 40.5" style="enable-background:new 0 0 40.4 40.5;" xml:space="preserve">
 					<style type="text/css">
@@ -283,7 +279,7 @@
 						C38.9,14.5,39.7,17.2,39.7,20.3z"/>
 					</svg> 
 
-                    <img id="target" class="target" src="fotos/whyIcon1.svg" alt="">
+                    <img class="target" src="fotos/whyIcon1.svg" alt="">
                 </div>
                 <div class="title">Powerful <br>search tool</div>
             </div>
@@ -297,7 +293,7 @@
 					<path id="word4" class="st0" style="fill:#1a2751;" d="M39.7,20.3c0,10.7-8.7,19.5-19.5,19.5S0.7,31.1,0.7,20.3S9.4,0.8,20.2,0.8c8.7,0,16.1,5.8,18.6,13.7
 						C38.9,14.5,39.7,17.2,39.7,20.3z"/>
 					</svg>
-                    <img id="target1" class="target" src="fotos/whyIcon2.svg" alt="">
+                    <img class="target" src="fotos/whyIcon2.svg" alt="">
                 </div>
                 <div class="title">Smart <br>framework</div>
             </div>
@@ -311,7 +307,7 @@
 					<path id="word2" class="st0" style="fill:#1a2751;" d="M39.7,20.3c0,10.7-8.7,19.5-19.5,19.5S0.7,31.1,0.7,20.3S9.4,0.8,20.2,0.8c8.7,0,16.1,5.8,18.6,13.7
 						C38.9,14.5,39.7,17.2,39.7,20.3z"/>
 					</svg>
-                    <img id="target2" class="target" src="fotos/whyIcon3.svg" alt="">
+                    <img class="target" src="fotos/whyIcon3.svg" alt="">
                 </div>
                 <div class="title">Ecommerce <br>searching</div>
             </div>
@@ -325,7 +321,7 @@
 					<path id="word" class="st0" style="fill:#1a2751;" d="M39.7,20.3c0,10.7-8.7,19.5-19.5,19.5S0.7,31.1,0.7,20.3S9.4,0.8,20.2,0.8c8.7,0,16.1,5.8,18.6,13.7
 						C38.9,14.5,39.7,17.2,39.7,20.3z"/>
 					</svg>
-                    <img id="target3" class="target" src="fotos/whyIcon4.svg" alt="">
+                    <img class="target" src="fotos/whyIcon4.svg" alt="">
                 </div>
                 <div class="title">GSA Migration</div>
             </div>
@@ -381,11 +377,11 @@
 				<li>Custom search relevancy algorithm</li>
 			</ul>
 		</div>
-		<div class="bbox">
+		<div id="bbox" class="bbox">
 			<h3>Website</h3>
 			<h2>Website Search</h2>
 			<div class="centered">
-				<img class="computer" src="img/computer.png">
+				<img class="computer" data-parallax='{"x": 0, "from-scroll":2200, "distance": 0}' data-parallax2='{"y": -200, "from-scroll": 2400, "distance": 60}' src="img/computer.png">
 		    </div>
 	    </div>
 	</div>
@@ -627,59 +623,23 @@
 							.add(TweenLite.to($word4, 0.2, {stroke: "#33629c",strokeDashoffset: 0, ease:Linear.easeNone}), "-=0.1") 
 							.add(TweenLite.to($word2, 0.2, {stroke: "#33629c",strokeDashoffset: 0, ease:Linear.easeNone}), "-=0.08") 
 						    .add(TweenLite.to($word, 0.2, {stroke: "#33629c",strokeDashoffset: 0, ease:Linear.easeNone}), "-=0.03")
+						    .fromTo(".target", 0.2, {opacity:0},{opacity:1},"-=0.6")
 
-							
-							//.add(TweenMax.to("path", 0.3, {stroke: "#33629c", ease:Linear.easeNone}), 0);			
 
 
 						// build scene
-						var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 10, offset: 1000, tweenChanges: true})
+						var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 10, tweenChanges: true})
 										.setTween(tween)
-										.addIndicators() // add indicators (requires plugin)
+										.addIndicators()
 										.addTo(controller);
 
 
 
 
+// .fromTo("#bbox", 0.2, {opacity:0},{opacity:1})
 
 
-var t = TweenLite.from("#target", 1,{autoAlpha:0, paused:true, ease:Linear.easeNone}),
 
-    scrollThreshold = {"start":3200, "stop":3240};
-
-$(window).on("scroll",function(e){
-  
-  var currentScroll = $(window).scrollTop(),
-      currentProgress = ( currentScroll - scrollThreshold.start ) / ( scrollThreshold.stop - scrollThreshold.start );
-  
-  if(currentScroll > scrollThreshold.start && currentScroll < scrollThreshold.stop){
-    t.progress(currentProgress);
-  }else if( currentScroll < scrollThreshold.start ){
-    t.progress(0);
-  }else if( currentScroll < scrollThreshold.stop ){
-    t.progress(1);
-  }
-  
-});
-
-var w = TweenLite.from("#target1", 1,{autoAlpha:0, paused:true, ease:Linear.easeNone}),
-
-    scrollThreshold = {"start":3200, "stop":3240};
-
-$(window).on("scroll",function(e){
-  
-  var currentScroll = $(window).scrollTop(),
-      currentProgress = ( currentScroll - scrollThreshold.start ) / ( scrollThreshold.stop - scrollThreshold.start );
-  
-  if(currentScroll > scrollThreshold.start && currentScroll < scrollThreshold.stop){
-    w.progress(currentProgress);
-  }else if( currentScroll < scrollThreshold.start ){
-    w.progress(0);
-  }else if( currentScroll < scrollThreshold.stop ){
-    w.progress(1);
-  }
-  
-});
 
 </script>
 

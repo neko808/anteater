@@ -1,19 +1,6 @@
 
-
 svg{
   width: 516px;
-}
-
-@media screen and (max-width:480px){
-    svg{
-        width: 260px;
-    }
-}
-
-@media screen and (min-width:481px) and (max-width:768px){
-    svg{
-        width: 400px;
-    }
 }
 
 .eater{
@@ -48,6 +35,7 @@ svg{
     line-height: 39px;
     font-weight: 700;
     color: white;
+    z-index: 10;
 }
 
 .whyTable .whyColumnCenter {
@@ -136,7 +124,30 @@ svg{
         position: absolute;
         left: 0;
         z-index: 0;
-        top: -165px;
+        top: 70px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px){
+    svg{
+        width: 500px;
+    }
+
+    .whySection .leftSvg {
+        position: absolute;
+        left: 0;
+        z-index: 0;
+        top: -270px;
+    }
+}
+
+@media screen and (max-width:480px){
+    svg{
+        width: 260px;
+    }
+
+    .whyTable .whyColumnLeft h2 {
+        margin-bottom: 30px;
     }
 }
 

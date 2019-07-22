@@ -1,12 +1,4 @@
 
-// $(window).scroll(function() {
-//     if($(window).scrollTop() < 240) {
-//         $("header").addClass("active");
-//     } else {
-//        $("header").removeClass("active");
-//     }
-// });
-
 window.onscroll = function() {
     scrollFunction()
 };

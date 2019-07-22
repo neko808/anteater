@@ -18,7 +18,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">  
 
-</head>
+</head>	
 <body>
 
 
@@ -51,14 +51,7 @@
         <div id="container">
             
 
- 	<!-- Menu Button -->
-    <button class="menu-btn" trigger="0">
-    	<div id="nav-icon1">
-			  <span></span>
-			  <span></span>
-			  <span></span>
-	  </div> 
-    </button>
+
 
 
         <!-- Site Overlay -->
@@ -67,7 +60,20 @@
         <!--    Inicia Header    -->
 	<header id="header">
 
+
+<div class="belt">
+	<button id="hamb" class="menu-btn" trigger="0">
+    	<div id="nav-icon1">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+	  </div> 
+    </button>
+</div>	
+
+
 	<div class="wrapper">
+
 
 		<div class="ambos">
 			<div class="logo">
@@ -150,8 +156,11 @@
 					<ul class="login">
 						<a href="#"><li class="sline">Login</li></a>
 						<a href="#"><li>Signup</li></a>
-				    </ul>		
+				    </ul>	
 				</nav>
+								 	<!-- Menu Button -->
+
+
 			</div>
 		</div>
 	</div>
@@ -501,7 +510,9 @@
 		<div class="bbox padded">
 			<div class="last">
 				<div class="w100">
-					<img class="logo" src="img/AntEater.svg"><img class="logo2" src="img/Google-Cloud.png"><img class="logo3" src="img/amarello.svg">
+					<img class="logo" src="img/AntEater.svg">
+					<img class="logo2" src="img/Google-Cloud.png">
+					<img class="logo3" src="img/amarello.svg">
 				</div>
 			</div>
 		</div>
@@ -610,7 +621,7 @@
 							.add(TweenLite.to($word2, 0.2, {stroke: "#33629c",strokeDashoffset: 0, ease:Linear.easeNone}), "-=0.08") 
 						    .add(TweenLite.to($word, 0.2, {stroke: "#33629c",strokeDashoffset: 0, ease:Linear.easeNone}), "-=0.03")
 						    .fromTo(".target", 0.2, {opacity:0},{opacity:1},"-=0.6")
-
+						    // TweenLite.to(".element", 0.5,{autoAlpha:0, y:50})
 
 
 						// build scene

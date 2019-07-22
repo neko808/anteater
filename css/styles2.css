@@ -354,21 +354,25 @@ footer h3{
   }
 
   .bbox .logo{
-		max-width: 70px;
+		max-width: 50px;
   }
 
   .bbox .logo2{
-		max-width: 110px;
-		margin-left: 30px;
+		max-width: 90px;
+		margin-left: 15px;
 		position: relative;
 		top: -8px;
   }
 
   .bbox .logo3{
-		max-width: 90px;
-		margin-left: 30px;
+		max-width: 70px;
+		margin-left: 15px;
 		position: relative;
 		top: -8px;
+  }
+
+  footer h3{
+  	text-align: center;
   }
 }
 
@@ -433,6 +437,30 @@ footer h3{
 	max-width: 1140px;
 	width: 100%;
 	margin: 0 auto;
+}
+
+.futer{
+	width: 100%;
+}
+
+.element1 {
+	opacity: 0;
+	-webkit-transform: translate(0, 20px);
+	-moz-transform: translate(0, 20px);
+	-o-transform: translate(0, 20px);
+	transform: translate(0, 20px);
+	    -webkit-transition: opacity 0.2s ease-in;
+	-moz-transition: opacity 0.2s ease-in;
+	-o-transition: opacity 0.2s ease-in;
+	transition: opacity 0.2s ease-in;
+}
+
+.element1.visible { 
+	opacity: 1;
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	transform: translate(0, 0);
 }
 
 @media screen and (max-width: 480px) {

@@ -42,8 +42,10 @@ header .logo{
 		padding-left: 12px;
 	}
 
-	.ambos .sflex{
-  		display: none;
+	.login a{
+  		font-family: 'Roboto', sans-serif;
+		font-size: 12px;
+		font-weight: 400;
     }
 }
 
@@ -185,7 +187,7 @@ header .texto{
 
 header .xflex{
 	flex: 1;
-	    -webkit-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
 	-moz-transition: opacity 0.5s ease-in-out;
 	-o-transition: opacity 0.5s ease-in-out;
 	transition: opacity 0.5s ease-in-out; 
@@ -195,6 +197,12 @@ header .xflex{
 	display: flex;
 	justify-content: center;
 	height: 50px;
+}
+
+@media screen and (max-width:480px){
+		header .xflex{
+		display: none;
+	}
 }
 
 header.water .texto{
@@ -745,7 +753,7 @@ ul.ball li {
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
-	top: 20px;
+	top: 23px;
 }
 
 .login li{

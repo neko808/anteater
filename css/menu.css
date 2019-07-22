@@ -12,11 +12,15 @@ ul {
   border: 1px solid transparent;
 }
 
+.belt{
+  position: relative;
+}
+
 /* Menu Button */
 .menu-btn {
   display: none;
-  position: fixed;
-  top: 26px;
+  position: absolute;
+  top: 33px;
   width: 50px;
   height: 40px;
   background: transparent;
@@ -24,9 +28,18 @@ ul {
   text-align: center;
   cursor: pointer;
   border: 0px;
-  right: 2px;
+  right: 10px;
   z-index: 1000;
+    -webkit-transition: all 0.02s;
+  -moz-transition: all 0.02s;
+  -o-transition: all 0.02s;
+  transition: all 0.01s; 
 }
+
+.xhamb #nav-icon1{
+  top: 10px;
+}
+
 .menu-btn:hover {
   opacity: 1;
 }

@@ -135,8 +135,16 @@
 	padding-right: 28px;
 }
 
+.bebox ul li{
+	padding-left: 28px;
+}
+
 .bbox ul li:nth-child(1){
 	border-right: 2px solid #01ecfa;
+}
+
+.bebox ul li:nth-child(1){
+	border-left: 2px solid #01ecfa;
 }
 
 .bbox .logo3{

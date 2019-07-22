@@ -172,7 +172,7 @@ header .logo {
 }
 
 header.minum .logo {
-	transform: scale(0.8) translate(-20px, 4px); 
+	transform: scale(0.8) translate(-20px, 9px); 
 }
 
 header .texto{
@@ -207,6 +207,15 @@ header.basic .xflex{
 	opacity: 1;
 }
 
+.m80{
+	margin-bottom: 80px;
+}
+
+.m140{
+	margin-bottom: 140px;
+}
+
+
 @media screen and (max-width: 768px) {
   .xflex .menu{
   	display: none;
@@ -219,6 +228,10 @@ header.basic .xflex{
 	-moz-transition: all 0.2s ease-out;
 	-o-transition: all 0.2s ease-out;
 	transition: all 0.2s ease-out;
+  }
+
+  .m140{
+  	margin-bottom: 60px;
   }
 }
 
@@ -255,6 +268,11 @@ main {
 	z-index: -1;
 }
 
+@media screen and (max-width: 480px) {
+	.foto{
+	}
+}
+
 .active{
 	background: transparent;
 }
@@ -275,18 +293,38 @@ main {
 	width: 100%;
 }
 
+.spacer21{
+	height: 80px;
+	width: 100%;
+}
+
 .spacer3{
 	height: 60px;
 	width: 100%;
 }
 
-
-.m80{
-	margin-bottom: 80px;
+.spacer4{
+	height: 110px;
+	width: 100%;
 }
 
-.m140{
-	margin-bottom: 140px;
+.spacer8{
+	height: 80px;
+	width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+   .spacer4{
+		display: none;
+	}
+
+	.spacer8{
+		display: none;
+	}
+
+	.spacer21{
+		display: none;
+	}
 }
 
 .wflex{
@@ -299,6 +337,15 @@ main {
 .wflex .piece{
 	flex: 1;
 	color: white;
+}
+
+.spiece{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
 }
 
 @media screen and (max-width: 560px) {
@@ -319,6 +366,17 @@ main {
 	width: 130px;
 }
 
+.scloud h3{
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.9em;
+	font-weight: 400;
+	color: white;
+	display: inline-block;
+	position: relative;
+	top: -5px;
+	padding-right: 3px;
+}
+
 .piece h2{
 	font-family: 'Roboto', sans-serif;
 	font-size: 2.5em;
@@ -329,6 +387,19 @@ main {
 .cielo{
 	box-sizing: border-box;
 	padding: 120px 16px 80px 16px;
+}
+
+@media screen and (max-width: 480px) {
+	.cielo{
+		box-sizing: border-box;
+		padding: 120px 16px 0px 16px;
+	}
+
+	.scloud h3{
+		display: block;
+		padding-bottom: 3px;
+	}
+
 }
 
 .cielo2{
@@ -759,10 +830,27 @@ ul.ball li {
 .computer{
 	max-width: 300px;
 	margin-top: 40px;
+/*	position: relative;
+	top: 60px;*/
+}
+
+.computer2{
+	max-width: 300px;
+	margin-top: 40px;
+/*	position: relative;
+	top: 30px;*/
 }
 
 .ecommerce{
 	max-width: 300px;
+	margin-top: 40px;
+/*	position: relative;
+	top: 60px;*/
+}
+
+.crawler{
+	max-width: 400px;
+	width: 100%;
 	margin-top: 40px;
 }
 
@@ -778,20 +866,12 @@ ul.ball li {
 	}
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
 
 	.sflexible{
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
-	}
-
-	.bbox:nth-child(1){
-		order: 2;
-	}
-
-	.bbox:nth-child(2){
-		order: 1;
 	}
 
 	.bbox h2{
@@ -816,6 +896,10 @@ ul.ball li {
 		max-width: 220px;
 	}
 
+	.computer2{
+		max-width: 220px;
+	}
+
 	.ecommerce{
 		max-width: 220px;
 	}
@@ -826,6 +910,18 @@ ul.ball li {
 
 	.bbox .logo{
 		max-width: 60px;
+	}
+
+	.bbox:nth-child(1){
+		order: 2;
+	}
+
+	.bbox:nth-child(2){
+		order: 1;
+	}
+
+	.under{
+		margin-bottom: 50px;
 	}
 
 }

@@ -1,10 +1,7 @@
 
-svg{
-  width: 516px;
-}
-
-.eater{
-	width: 100%;
+.eswrap{
+    width: 100%;
+    position: relative;
 }
 
 .wrapper2{

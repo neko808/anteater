@@ -377,18 +377,23 @@ footer h3{
 }
 
 .nube{
-	max-width: 265px;
+	max-width: 260px;
 	width: 100%;
 }
 
 .five{
-	max-width: 145px;
+	max-width: 140px;
 	width: 100%;
 }
 
 .haute{
 	width: 100%;
 	height: 160px;
+}
+
+.soc{
+	max-width: 145px;
+	width: 100%;
 }
 
 .medios h3{
@@ -467,4 +472,21 @@ footer h3{
   .wrapper8 .spacer{
 		height: 140px;
 	}
+}
+
+.world{
+	opacity: 0;
+		-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+header .xword .world{
+	opacity:1;
+}
+
+.tagg{
+	width: 30px;
+	position: absolute;
 }

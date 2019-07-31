@@ -9,10 +9,12 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/styles2.css">
 	<link rel="stylesheet" type="text/css" href="css/anime.css">
+	<link rel="stylesheet" type="text/css" href="css/top_menu.css">
 
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/pushy.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reveal.css">
 
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
@@ -20,11 +22,6 @@
 
 </head>	
 <body>
-
-
-
-
-
 
 
         <nav class="pushy pushy-right" data-focus="#first-link">
@@ -41,7 +38,7 @@
                         </ul>
                     </li>
                     <li class="pushy-link"><a href="#">Developer</a></li>
-                    <li class="pushy-link"><a href="#">Pricing</a></li>
+                    <li class="pushy-link"><a href="pricing.html">Pricing</a></li>
                 </ul>
             </div>
         </nav>
@@ -64,10 +61,10 @@
 <div class="belt">
 	<button id="hamb" class="menu-btn" trigger="0">
     	<div id="nav-icon1">
-			  <span></span>
-			  <span></span>
-			  <span></span>
-	  </div> 
+		  <span></span>
+		  <span></span>
+		  <span></span>
+	    </div> 
     </button>
 </div>	
 
@@ -131,22 +128,27 @@
 				</g>
 				</svg>
 			</div>
+
+				<div class="texto2">
+					<img class="want" src="fotos/white-anteater.svg">
+				</div>
+	
 			<div class="xflex">
 				<nav class="menu">
 					<ul>
-				   	 <a href="#features"><li class="different">Features</li></a>
+				   	 <a href="#features"><li class="different paad">Features</li></a>
 				   	 <a href="#"><li class="different">GSA Migration</li></a>
 				     <a href="#"><li class="sub-menu-parent" tab-index="0">
-				       <p>Search</p>
+				       <p>Search Solutions</p>
 					       <ul class="sub-menu">
-					         <a href="#ecommerce"><li>Ecommerce</li></a>
-					         <a href="#web"><li>Web</li></a>
-					         <a href="#document"><li>Document</li></a>
+					         <a href="#ecommerce"><li>Ecommerce search</li></a>
+					         <a href="#web"><li>Web search</li></a>
+					         <a href="#document"><li>Document search</li></a>
 					       </ul>
 				       </li>
 				     </a>
 				     <a href="#"><li class="different">Developer</li></a>
-				   	 <a href="#"><li class="different">Pricing</li></a>
+				   	 <a href="pricing.html"><li class="different">Pricing</li></a>
 				   	 
 				   </ul>
 			   </nav>
@@ -154,9 +156,10 @@
 			<div class="sflex">
 				<nav class="smenu">
 					<ul class="login">
+<!-- 						<a href="#"><li class="sline">Login</li></a> -->
 						<a href="#"><li class="sline">Login</li></a>
-						<a href="#"><li>Signup</li></a>
-				    </ul>	
+						<a href="#"><li>Sign up</li></a>
+				    </ul>
 				</nav>
 								 	<!-- Menu Button -->
 
@@ -168,9 +171,7 @@
 
 
 
-
 <img class="foto" src="fotos/fondo.svg">
-
 
 
 
@@ -195,9 +196,19 @@
 				</div>
 		</div>
 		<div class="piece cielo2">
-			<div class="spiece">
-				<img class="crawler" src="img/crawler.png">
-			</div>
+		<div class="spiece">
+				<!--<img class="crawler" src="img/crawler.png">-->
+
+
+
+
+
+
+
+
+		</div> 
+	
+
             <div class="scloud">
             	<h3>Powered by</h3>
 				<img src="img/Google-Cloud.png">
@@ -205,6 +216,23 @@
 		</div>
 	</div>
 </div>
+
+
+<!-- <div class="eswrap">
+	<section id="revealAnim">
+    	<div class="section-content">
+    		<div class="copy-container">
+		    	<h2>Reveal animation</h2>
+    		</div>
+    		<div class="images-container">
+	    		<img class="front" src="fotos/img_iphone_front.png" alt="iPhone" />
+	    		<img class="back" src="fotos/img_iphone_back.png" alt="iPhone" />
+	    		<img class="side" src="fotos/img_iphone_side.png" alt="iPhone" />
+    		</div>
+    	</div>
+    </section>
+</div> -->
+
 
 
 
@@ -370,11 +398,27 @@
 					<h3>With a service from the cloud</h3>
 				</div>
 				<div class="sbox">
+					<div class="haute"><img src="img/soc.png" class="soc"></div>
+					<h3><span>SOC 2</span><br>Control over security,<br>availability and confidentiality</h3>
+				</div>
+				<div class="sbox">
 					<div class="haute"><img src="img/five-nines.svg" class="five"></div>
 					<h3>With a service from the cloud</h3>
 				</div>
 		</div>
 	</div>
+
+
+
+<!-- <img class="tagg" data-parallax='{"x": 700, "y":200, "from-scroll":2400, "distance": 0}' 
+                  data-parallax2='{"y": 100, "from-scroll": 2600, "distance": 40}' 
+                  src="fotos/tag.svg"> -->
+
+
+<img class="tagg" data-parallax='{"x": 700, "y":200, "from-scroll":2300, "rotateZ":300, "distance": 0}'
+                  src="fotos/tag.svg">
+
+
 
 
 
@@ -394,7 +438,6 @@
 			<h3>Website</h3>
 			<h2>Website Search</h2>
 			<div class="centered">
-<!-- <img class="computer" data-parallax='{"x": 0, "from-scroll":2200, "distance": 0}' data-parallax2='{"y": -100, "from-scroll": 2400, "distance": 60}' src="img/computer.png"> -->
 			<img class="computer" src="img/computer.png">
 		    </div>
 	    </div>
@@ -446,20 +489,13 @@
 	<div class="box1">
 		<div class="spacer21"></div>
     	<h2>Nuestros clientes</h2>
-    <div class="pleca"></div>
+    	<div class="pleca"></div>
 </div>
 
 
 <ul class="logos-flex-container">
     <li class="logos-flex-item">
-      	        <!--  <img src="img/interjet-azul.png" class="interjet"> -->
-      	         <img src="img/interjet-gray.png" class="interjet top">
-    </li>
-    <li class="logos-flex-item">
       <a href=""><img src="fotos/senado.png" class="senado"></a>
-    </li>
-    <li class="logos-flex-item">
-      <a href=""><img src="fotos/solmexico.png" class="solmexico"></a>
     </li>
     <li class="logos-flex-item">
       <a href=""><img src="fotos/telmex.png" class="telmex"></a>
@@ -471,16 +507,13 @@
       <a href=""><img src="fotos/lacomer.png" class="lacomer"></a>
     </li>
     <li class="logos-flex-item">
-      <a href=""><img src="fotos/banco.png" class="banco"></a>
-    </li>
-    <li class="logos-flex-item">
       <a href=""><img src="fotos/televisa.png" class="televisa"></a>
     </li>
     <li class="logos-flex-item">
-      <a href=""><img src="fotos/noticias.png" class="noticias"></a>
+      <a href=""><img src="fotos/banorte.png" class="banorte"></a>
     </li>
     <li class="logos-flex-item">
-      <a href=""><img src="fotos/banorte.png" class="banorte"></a>
+      <a href=""><img src="fotos/tpj.png" class="tpj"></a>
     </li>
 </ul>
 </div>
@@ -511,7 +544,6 @@
 			<div class="last">
 				<div class="w100">
 					<img class="logo" src="img/AntEater.svg">
-					<img class="logo2" src="img/Google-Cloud.png">
 					<img class="logo3" src="img/amarello.svg">
 				</div>
 			</div>
@@ -520,7 +552,7 @@
 			<div class="spacer2"></div>
 	          <div class="app-form">
 	          	    <div class="box3">
-			          	<h3>Get in touch</h3>
+			          	<h3>Contact us</h3>
 			          	<div class="pleca3"></div>
 			        </div>
 	            <div class="app-form-group margen">
@@ -633,12 +665,8 @@
 
 
 
-// .fromTo("#bbox", 0.2, {opacity:0},{opacity:1})
-
-
-
-
 </script>
+
 
 <script src="xjs/pushy.min.js"></script>
 <script src="xjs/script.js"></script>

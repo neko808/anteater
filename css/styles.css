@@ -9,259 +9,6 @@ body {
   background: #1a2751;
   color: white;
 }
-header {
-  box-sizing: border-box;
-  color: rgba(255,255,255,1);
-  height: 61px;
-  position: fixed;
-  top: 0;
-  	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-  padding: 0 0;
-  z-index: 100;
-}
-
-.ambos{
-	display: flex;
-	justify-content: space-between;
-}
-
-header .logo{
-	flex: 1;
-	max-width: 110px;
-	padding-left: 12px;
-}
-
-@media screen and (max-width: 480px) {
-    header .logo{
-		flex: 1;
-		max-width: 88px;
-		padding-left: 12px;
-	}
-
-	.login a{
-  		font-family: 'Roboto', sans-serif;
-		font-size: 12px;
-		font-weight: 400;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-	.ambos .sflex{
-  		padding-right: 50px;
-    }
-}
-
-nav.menu ul{
-	display: flex;
-	
-}
-
-nav.menu ul li{
-	list-style: none;
-	font-family: 'Roboto', sans-serif;
-	font-size: 14.3px;
-	padding: 8px 0;
-	font-weight: 400;
-	color: #8085b4;
-	margin-left: 35px;
-	 -webkit-transition: all 0.1s ease-in;
-	-moz-transition: all 0.1s ease-in;
-	-o-transition: all 0.1s ease-in;
-	transition: all 0.1s ease-in;
-}
-
-nav.menu ul li ul li{
-	margin-left: 18px;
-	color: #1a2751;
-}
-
-nav.menu ul li ul:after {
-  position: absolute;
-  left: 24%;
-  transform: translateX(-50%);
-  top: -8px;
-  width: 0;
-  height: 0;
-  content: '';
-  border-left:10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #eee;
-}
-
-nav.menu ul li:hover{
-    color: #01ecfa;
-}
-
-nav.menu ul li.sub-menu-parent:hover{
-    color: #01ecfa;
-}
-
-nav.menu ul a{
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #8085b4;
-}
-
-nav.menu ul ul a{
-/*	color:#1a2751;*/
-	color:#1a2751;
-	text-transform: none;
-}
-
-/*    Nuevos estilos    */
-
-.sub-menu-parent {
-  position: relative;
-}
-.sub-menu {
-  display: flex;
-  flex-direction: column;
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: -11px;
-  left: 0;
-  width: 120px;
-  background-color: #eee;
-  transform: translateY(75px);
-  z-index: -1;
-  -webkit-transition: all 0.2s ease-in-out 0s, visibility 0s linear 0.2s, z-index 0s linear 0.01s;
-	-moz-transition: all 0.2s ease-in-out 0s, visibility 0s linear 0.2s, z-index 0s linear 0.01s;
-	-o-transition: all 0.2s ease-in-out 0s, visibility 0s linear 0.2s, z-index 0s linear 0.01s;
-  transition: all 0.2s ease-in-out 0s, visibility 0s linear 0.2s, z-index 0s linear 0.01s;
-}
-.sub-menu-parent:focus .sub-menu,
-.sub-menu-parent:focus-within .sub-menu,
-.sub-menu-parent:hover .sub-menu {
-  visibility: visible;
-  opacity: 1;
-  z-index: 1;
-  -webkit-transform: translateY(50px);
-  -moz-transform: translateY(50px);
-  -o-transform: translateY(50px);
-  transform: translateY(50px);
-  -webkit-transition-delay: 0s, 0s, 0.3s;
-  -moz-transition-delay: 0s, 0s, 0.3s;
-  -o-transition-delay: 0s, 0s, 0.3s;
-  transition-delay: 0s, 0s, 0.3s;
-  /* this removes the transition delay so the menu will be visible while the other styles transition */
-}
-.sub-menu li{
-	text-align: left;
-	margin-left: 16px;
-}
-
-.sub-menu-parent p{
-	color:  #8085b4
-}
-
-.sub-menu-parent:hover p{
-	color:  #01ecfa;
-}
-
-header .logo {
-    position: relative;
-    width: 120px;
-    -webkit-transition: transform 0.5s cubic-bezier(0.5, 0.01, 0.38, 0.86);
-	-moz-transition: transform 0.5s cubic-bezier(0.5, 0.01, 0.38, 0.86);
-	-o-transition: transform 0.5s cubic-bezier(0.5, 0.01, 0.38, 0.86);
-    transition: transform 0.5s cubic-bezier(0.5, 0.01, 0.38, 0.86); 
-}
-
-header.minum .logo {
-	transform: scale(0.8) translate(-20px, 9px); 
-}
-
-header .texto{
-	 -webkit-transition: opacity 0.5s ease-in-out;
-	-moz-transition: opacity 0.5s ease-in-out;
-	-o-transition: opacity 0.5s ease-in-out;
-	transition: opacity 0.5s ease-in-out; 
-	opacity: 1;
-}
-
-header .xflex{
-	flex: 1;
-	-webkit-transition: opacity 0.5s ease-in-out;
-	-moz-transition: opacity 0.5s ease-in-out;
-	-o-transition: opacity 0.5s ease-in-out;
-	transition: opacity 0.5s ease-in-out; 
-	position: relative;
-	top: 22px;
-	opacity: 1;
-	display: flex;
-	justify-content: center;
-	height: 50px;
-}
-
-@media screen and (max-width:480px){
-		header .xflex{
-		display: none;
-	}
-}
-
-header.water .texto{
-	opacity: 0;
-}
-
-header.basic .xflex{
-	padding-top: 0;
-	position: relative;
-	opacity: 1;
-}
-
-.m80{
-	margin-bottom: 80px;
-}
-
-.m140{
-	margin-bottom: 140px;
-}
-
-
-@media screen and (max-width: 768px) {
-  .xflex .menu{
-  	display: none;
-  }
-
-  header .logo{
-  	max-width: 100px;
-  	padding-left: 12px;
-  	-webkit-transition: all 0.2s ease-out;
-	-moz-transition: all 0.2s ease-out;
-	-o-transition: all 0.2s ease-out;
-	transition: all 0.2s ease-out;
-  }
-
-  .m140{
-  	margin-bottom: 60px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .xflex .menu ul li{
-  	font-size: 12px;
-  }
-}
-
-.nav-up {
-  top: -18px;
-}
-
-.nav-down{
-	background: #1a2751;
-}
-
-.wrapper{
-	max-width: 1140px;
-	width: 100%;
-	margin: 0 auto;
-}
 
 main {
    height: 2000px;
@@ -276,11 +23,6 @@ main {
 	z-index: -1;
 }
 
-@media screen and (max-width: 480px) {
-	.foto{
-	}
-}
-
 .active{
 	background: transparent;
 }
@@ -289,7 +31,6 @@ main {
 	width: 90px;
 	border: 1px solid red;
 }
-
 
 .spacer{
 	height: 300px;
@@ -345,15 +86,18 @@ main {
 .wflex .piece{
 	flex: 1;
 	color: white;
+	border: 1px solid red;
 }
 
 .spiece{
 	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	border: 1px solid yellow;
+/*	justify-content: center;
 	align-items: center;
-	padding: 20px;
+	padding: 20px;*/
 }
 
 @media screen and (max-width: 560px) {
@@ -412,7 +156,7 @@ main {
 
 .cielo2{
 	box-sizing: border-box;
-	padding: 20px 16px 80px 16px;
+	padding: 20px 16px 20px 16px;
 }
 
 .next{
@@ -623,6 +367,11 @@ ul.ball li {
 	opacity: 0.6;
 }
 
+.tpj{
+	width: 70px;
+	opacity: 0.6;
+}
+
 .icono{
 	width: 70px;
 	margin-bottom: 40px;	
@@ -718,7 +467,7 @@ ul.ball li {
 }
 
 .sbox{
-	flex: 0 1 50%;
+	flex: 0 1 33%;
 	text-align: center;
 	margin-bottom: 40px;
 }
@@ -726,8 +475,15 @@ ul.ball li {
 .sbox h3{
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
-	line-height: 23px;
+	line-height: 21px;
 	font-weight: 400;
+}
+
+.sbox h3 span{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: 600;
 }
 
 @media screen and (max-width: 480px) {
@@ -747,36 +503,6 @@ ul.ball li {
 
 .flecha{
 	width: 15px;
-}
-
-.login{
-	display: flex;
-	flex-wrap: wrap;
-	position: relative;
-	top: 23px;
-}
-
-.login li{
-	list-style: none;
-	color: #8085b4;
-	padding: 6px 16px;
-	margin-left: 0px;
-}
-
-.login a{
-	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
-	font-weight: 400;
-	text-decoration: none;
-}
-
-.login a li:hover{
-	color: #01ecfa;
-}
-
-.sline{
-	border: 2px solid #01ecfa;
-	border-radius: 50px;
 }
 
 .boton span{
@@ -973,14 +699,5 @@ ul.ball li {
 /*	-webkit-box-shadow: 8px 8px 33px -8px rgba(0,0,0,0.66);
 	-moz-box-shadow: 8px 8px 33px -8px rgba(0,0,0,0.66);
 	box-shadow: 8px 8px 33px -8px rgba(0,0,0,0.66);*/
-}
-
-.fondo{
-	background-color: #1a2751;
-	  	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-
 }
 

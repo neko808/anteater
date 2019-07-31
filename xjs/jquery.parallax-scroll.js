@@ -64,7 +64,7 @@ var ParallaxScroll = {
             for(iData = 0; iData < datasLength; iData ++) {
                 var data = datas[iData];
                 var scrollFrom = data["from-scroll"];
-                if (scrollFrom == undefined) scrollFrom = Math.max(0, $(el).offset().top - windowHeight);
+                if (scrollFrom == undefined) scrollFrom = Math.max(0, $(el).offset().xtop - windowHeight);
                 scrollFrom = scrollFrom | 0;
                 var scrollDistance = data["distance"];
                 var scrollTo = data["to-scroll"];

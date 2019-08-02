@@ -1,22 +1,22 @@
+
 *{
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  line-height: 1.25;
   color: #ddd;
   background: #1a2751;
-/*  background-color: #f2f2f2;*/
 }
 
 .container{
 	max-width: 1140px;
 	margin: 20px auto;
+}
+
+.piece{
+  box-sizing: border-box;
 }
 
 .piece:nth-child(3){
@@ -110,9 +110,7 @@ body {
 }
 
 table {
-/*  border: 1px solid #ccc;*/
   border-collapse: collapse;
-  margin: 0;
   padding: 0;
   width: 100%;
   table-layout: fixed;
@@ -158,6 +156,8 @@ table th {
 @media screen and (max-width: 600px) {
   table {
     border: none;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   
   table thead {
@@ -238,6 +238,11 @@ table th {
 .logo{
   width: 100px;
   z-index: 10;
+}
+
+.ambos a:focus{
+  outline: none;
+  border: none;
 }
 
 .headd {
@@ -363,11 +368,21 @@ table th {
   width: 15px;
 }
 
-.footer {
-	position: relative;
-	height: auto;
-	padding: 1.8em 0;
-	text-align: center;
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 0px;
+}
+
+footer h3{
+  color: #6e75b4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .spacing{
@@ -381,8 +396,8 @@ table th {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding-top: 36px;
-  padding-bottom: 18px;
+  padding-top: 60px;
+  padding-bottom: 8px;
 }
 
 .page-title h2{

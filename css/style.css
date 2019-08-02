@@ -72,3 +72,12 @@
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
+
+/*     Animacion principal     */
+
+
+.aeb{
+  width: 100%;
+  height: 100%;
+  border: 1px solid blue;
+}

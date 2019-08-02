@@ -1,0 +1,27 @@
+runtime: nodejs8
+
+handlers: 
+  - url: /
+    static_files: index.html
+    upload: index\.html
+    secure: always
+  
+  - url: /img/
+    static_dir: img
+    secure: always
+  
+  - url: /css/
+    static_dir: css
+    secure: always
+  
+  - url: /fotos/
+    static_dir: fotos
+    secure: always
+  
+  - url: /js/
+    static_dir: js
+    secure: always
+  
+  - url: /xjs/
+    static_dir: xjs
+    secure: always

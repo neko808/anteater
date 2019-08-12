@@ -190,16 +190,16 @@
     position: absolute;
     right: 0;
     z-index: 0;
-    top: 0px;
-    width: 356px;
-    height: 500px;
-    background: url(../img/laptop2.jpg) center center no-repeat;
-    background-size: auto;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-    background-size: cover !important;
-    display: none;
+    top: 220px;
+    width: 410px;
+    height: 390px;
+
+}
+
+@media screen and (min-width: 768px){
+    .whySection .rightPhoto {
+
+    }
 }
 
 @media screen and (min-width: 480px){

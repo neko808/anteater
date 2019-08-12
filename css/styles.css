@@ -81,6 +81,12 @@ main {
 	margin-bottom: 50px;
 }
 
+.fuse{
+	position: absolute;
+	max-width:1200px;
+	width: 100%;
+}
+
 .wflex .piece{
 	flex: 1;
 	color: white;
@@ -91,7 +97,6 @@ main {
 	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	border: 1px solid yellow;
 }
 
 @media screen and (max-width: 560px) {
@@ -104,8 +109,8 @@ main {
 .wflex .piece:nth-child(2){
     display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-end;
-	align-items: flex-end;
+	justify-content: center;
+	align-items: center;
 }
 
 .scloud img{

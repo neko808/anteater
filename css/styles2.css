@@ -328,6 +328,10 @@ footer h3{
   .logos-flex-container {
   	padding: 0 26px;
   }
+
+  .padded{
+  	padding: 0 16px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -342,10 +346,6 @@ footer h3{
 
   .boton3{
   	margin-top: 26px;
-  }
-
-  .padded{
-  	padding: 0 16px;
   }
 
   .medios{
@@ -490,3 +490,4 @@ header .xword .world{
 	width: 30px;
 	position: absolute;
 }
+

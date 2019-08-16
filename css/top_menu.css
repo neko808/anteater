@@ -13,7 +13,7 @@ header {
   z-index: 100;
 }
 
-svg{
+.meddio{
   width: 516px;
 }
 
@@ -31,6 +31,12 @@ svg{
 	display: flex;
     justify-content: space-between;
     height: 100px;
+}
+
+@media screen and (max-width: 480px){
+	.ambos{
+		justify-content: flex-start;
+	}
 }
 
 .wrapper{
@@ -68,6 +74,18 @@ header .logo{
 	.ambos .sflex{
   		padding-right: 50px;
     }
+}
+
+@media screen and (max-width: 480px) {
+	.sflex{
+		display: none;
+	}
+
+	.meddio{
+		width: 250px;
+		position: relative;
+		top: 50px;
+	}
 }
 
 nav.menu ul{

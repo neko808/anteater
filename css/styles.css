@@ -316,19 +316,16 @@ ul.ball li {
 	background-color: #01ecfa;
 }
 
-.interjet{
-	width: 130px;
-	position: absolute;
-}
-
 .senado{
 	width: 80px;
 	opacity: 0.6;
 }
 
-.solmexico{
-	width: 150px;
-	opacity: 0.6;
+.senado-azul{
+  display: none;
+  position: absolute;
+  width: 80px;
+  z-index: 10;
 }
 
 .telmex{
@@ -336,9 +333,23 @@ ul.ball li {
 	opacity: 0.6;
 }
 
+.telmex-azul{
+  display: none;
+  position: absolute;
+  width: 120px;
+  z-index: 10;
+}
+
 .citi{
 	width: 170px;
 	opacity: 0.6;
+}
+
+.citi-azul{
+  display: none;
+  position: absolute;
+  width: 170px;
+  z-index: 10;
 }
 
 .lacomer{
@@ -346,9 +357,11 @@ ul.ball li {
 	opacity: 0.6;
 }
 
-.banco{
-	width: 150px;
-	opacity: 0.6;
+.lacomer-azul{
+  display: none;
+  position: absolute;
+  width: 140px;
+  z-index: 10;
 }
 
 .televisa{
@@ -356,20 +369,48 @@ ul.ball li {
 	opacity: 0.6;
 }
 
-.noticias{
-	width: 120px;
-	opacity: 0.6;
+.televisa-azul{
+  display: none;
+  position: absolute;
+  width: 90px;
+  z-index: 10;
 }
 
 .banorte{
-	width: 120px;
+	width: 140px;
 	opacity: 0.6;
+}
+
+.banorte-azul{
+  display: none;
+  position: absolute;
+  width: 140px;
+  z-index: 10;
 }
 
 .tpj{
 	width: 70px;
 	opacity: 0.6;
 }
+
+.tpj-azul{
+  display: none;
+  position: absolute;
+  width: 70px;
+  z-index: 10;
+}
+
+.logos-flex-item a:hover .senado-azul,
+.logos-flex-item a:hover .telmex-azul,
+.logos-flex-item a:hover .citi-azul,
+.logos-flex-item a:hover .lacomer-azul,
+.logos-flex-item a:hover .televisa-azul,
+.logos-flex-item a:hover .banorte-azul,
+.logos-flex-item a:hover .tpj-azul
+{
+	display: block;
+}
+
 
 .icono{
 	width: 70px;
@@ -439,6 +480,14 @@ ul.ball li {
 	font-family: 'Roboto', sans-serif;
 	font-size: 2.5em;
 	font-weight: 400;
+}
+
+.box1 h3{
+	color: #6e75b4;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.7em;
+	font-weight: 400;
+	margin-top: 30px;
 }
 
 .box h2{
@@ -568,14 +617,14 @@ ul.ball li {
 }
 
 .computer2{
-	max-width: 300px;
-	margin-top: 40px;
+	max-width: 410px;
+	margin-top: 26px;
 /*	position: relative;
 	top: 30px;*/
 }
 
 .ecommerce{
-	max-width: 300px;
+	max-width: 380px;
 	margin-top: 40px;
 /*	position: relative;
 	top: 60px;*/

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Fixed Header</title>
+	<title>Anteater</title>
 
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/styles2.css">
@@ -27,7 +27,7 @@
             <div class="pushy-content">
                 <ul>
                 	<li class="pushy-link"><a href="#">Features</a></li>
-                    <li class="pushy-link"><a href="#">GSA Migration</a></li>
+                    <li class="pushy-link"><a href="gsa-migration.html">GSA Migration</a></li>
                     <li class="pushy-submenu">
                         <button>Search</button>
                         <ul>
@@ -139,7 +139,7 @@
 				<nav class="menu">
 					<ul>
 				   	 <a href="#features"><li class="different paad">Features</li></a>
-				   	 <a href="#"><li class="different">GSA Migration</li></a>
+				   	 <a href="gsa-migration.html"><li class="different">GSA Migration</li></a>
 				     <a href="#"><li class="sub-menu-parent" tab-index="0">
 				       <p>Search Solutions</p>
 					       <ul class="sub-menu">
@@ -249,6 +249,9 @@
 
 <div class="wrapper8">
 	<div class="spacer"></div>
+	<div class="slogan">
+		<p>The agility to integrate your content to maximize productivity and business value</p>
+	</div>
 	<div class="spacer2"></div>
 </div>
 
@@ -376,7 +379,7 @@
 				<p>Stable and easy-to-use interface and personalized user experience which offers a better search experience.<br>It is powered by Google Cloud Platform.</p>
 			</div>
 				<div class="sbox">
-					<div class="haute"><img src="img/color-cloud.png" class="nube"></div>
+					<div class="haute"><img src="img/color-cloud.png" class="caja"></div>
 					<h3>With a service from the cloud</h3>
 				</div>
 				<div class="sbox">
@@ -592,6 +595,9 @@
 </div>
 
 
+<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+
+
 
 
 <footer>
@@ -662,6 +668,8 @@
 							.add(TweenLite.to($word4, 0.2, {stroke: "#33629c",strokeDashoffset: 0, ease:Linear.easeNone}), "-=0.1") 
 							.add(TweenLite.to($word2, 0.2, {stroke: "#33629c",strokeDashoffset: 0, ease:Linear.easeNone}), "-=0.08") 
 						    .add(TweenLite.to($word, 0.2, {stroke: "#33629c",strokeDashoffset: 0, ease:Linear.easeNone}), "-=0.03")
+
+						    
 						    .fromTo(".target", 0.2, {opacity:0},{opacity:1},"-=0.6")
 						    // TweenLite.to(".element", 0.5,{autoAlpha:0, y:50})
 
@@ -731,6 +739,7 @@ var scene2 = new ScrollMagic.Scene({
 <script src="xjs/pushy.min.js"></script>
 <script src="xjs/script.js"></script> 
 <script src="xjs/target.js"></script>
+<script src="xjs/top.js"></script>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.7/lottie.js"></script>	

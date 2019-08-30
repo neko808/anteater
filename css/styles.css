@@ -573,6 +573,13 @@ ul.ball li {
 		padding: 130px 0;
 		z-index: 10;
 	}
+
+	.box1 h2{
+		color: white;
+		font-family: 'Roboto', sans-serif;
+		font-size: 2.1em;
+		font-weight: 400;
+	}
 }
 
 .flecha{
@@ -775,7 +782,18 @@ ul.ball li {
 	box-shadow: 8px 8px 33px -8px rgba(0,0,0,0.66);*/
 }
 
-.wflex .piece:last-child{
+.wflex .piece2{
 	padding: 0;
+}
+
+.cielo3{
+	box-sizing: border-box;
+	padding: 30px 30px 30px 30px;
+}
+
+@media screen and (max-width: 480px){
+	.cielo3{
+		margin-top: 20px;
+	}
 }
 

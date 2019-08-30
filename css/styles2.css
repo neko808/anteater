@@ -868,5 +868,17 @@ header .xword .world{
 	outline: none;
 }
 
+.website{
+	max-width: 380px;
+	width: 100%;
+	height: auto;
+}
+
+.s-ecommerce{
+	max-width: 430px;
+	width: 100%;
+	height: auto;
+}
+
 
 

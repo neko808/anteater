@@ -559,32 +559,67 @@
 		</div>
 		<div class="bbox padded">
 			  <div class="spacer2"></div>
-	          <div id="app-form" class="app-form">
-	          	    <div class="box3">
-			          	<h3>Contact us</h3>
-			          	<div class="pleca3"></div>
-			        </div>
-	            <div class="app-form-group margen">
-	              <input class="app-form-control" placeholder="name">
-	            </div>
-	            <div class="app-form-group">
-	              <input class="app-form-control" placeholder="email">
-	            </div>
-	            <div class="app-form-group">
-	              <input class="app-form-control" placeholder="phone">
-	            </div>
-	            <div class="app-form-group message">
-	              <input class="app-form-control2" placeholder="message">
-	            </div>
-	            <div class="app-form-group buttons">
-	              <a href="#">
-	              	<div class="app-form-button">
-	              	    Send Message
-	              	    <span><img class="flecha" src="img/flecha.svg"></span>
-	              	</div>
-	              </a>
-	            </div>
-	          </div>
+
+			  <form action="contact.php" method="post">
+		          <div id="app-form" class="app-form">
+		          	    <div class="box3">
+				          	<h3>Contact us</h3>
+				          	<div class="pleca3"></div>
+				        </div>
+
+	                <div class="app-form-group1 margen">
+		              <select name="choose">
+		              	<option>Purchase of a product1</option>
+		              	<option>Support</option>
+		              </select>
+		            </div>
+
+
+		            <div class="app-form-group">
+		              <input class="app-form-control" name="name" placeholder="name">
+		            </div>
+		            <div class="app-form-group">
+		              <input class="app-form-control" name="email" placeholder="email">
+		            </div>
+		            <div class="app-form-group">
+		              <input class="app-form-control" name="empresa" placeholder="empresa">
+		            </div>
+		            <div class="app-form-group message">
+		              <input class="app-form-control2" name="message" placeholder="message">
+		            </div>
+
+
+		            <button class="app-form-button" type="submit" name="submit" value="send">
+			            Send message
+			        	<span><img class="flecha" src="img/flecha.svg"></span>
+		    		</button>
+		          </div>
+	          </form>
+
+	          <script type="text/javascript">
+	          	
+	          	var rotate = document.getElementClassName('app-form-group1');
+					rotate.addEventListener('click', function() {
+					   // rotate.classList.add('rotated');
+
+					var color = window.getComputedStyle(document.querySelector('.app-form-group1'), '::before')
+	                  .getPropertyValue('content');
+
+	                  color.addEventListener('click', function(){
+
+	                  })
+
+	                  color.classList.add('colur');
+
+			
+
+
+
+	          </script>
+
+
+
+
 	          <div class="medios">
 	          	<h3>Follow us on</h3>
 		          <a href="#"><img class="media" src="fotos/twitter.svg"></a>

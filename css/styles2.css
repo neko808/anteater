@@ -1,7 +1,47 @@
 /*    Form Styles   */
 
-.app-form-group {
+.app-form-group{
+	margin-bottom: 20px;
+}
+
+.app-form-group1 {
+  font-size: 1rem;
+  display: inline-block;
+  width: 300px;
+  position: relative;
+  cursor: pointer;
   margin-bottom: 20px;
+}
+
+select::-ms-expand { display: none; }
+select{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.app-form-group1::before{
+  position: absolute;
+  content: ' ';
+  background-image: url('../fotos/parrow.svg');
+  background-size: 19px 19px;
+  width: 19px;
+  height:19px;
+  color: #FFF;
+  right:20px;
+  top: calc(50% - 0.5em);
+  z-index: -1;
+    -moz-transition: all 0.25s ease-in;
+  -webkit-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+.rotated {
+	transform: rotate(180deg);
+}
+
+.colur{
+	transform: rotate(180deg);
 }
 
 .app-form-group.message {
@@ -89,7 +129,6 @@
   border-bottom: 1px solid #6e75b4;
   color: #959ffa;
   font-size: 14px;
-  text-transform: uppercase;
   outline: none;
   transition: border-color .2s;
 }
@@ -813,4 +852,21 @@ header .xword .world{
 		display: none;
 	}
 }
+
+/*  Select option */
+
+.app-form-group1 select{
+	box-sizing: border-box;
+	max-width: 300px;
+	width: 100%;
+	padding: 16px 20px;
+	border: 1px solid #6e75b4;
+	background: none;
+	border-radius: 50px;
+	color: #959ffa;
+	font-size: 14px;
+	outline: none;
+}
+
+
 

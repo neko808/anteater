@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Fixed Header</title>
+	<title>Anteater</title>
 
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/styles2.css">
@@ -17,7 +17,7 @@
 
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">  
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
 
 </head>	
 <body>
@@ -27,17 +27,21 @@
             <div class="pushy-content">
                 <ul>
                 	<li class="pushy-link"><a href="#">Features</a></li>
-                    <li class="pushy-link"><a href="#">GSA Migration</a></li>
+                    <li class="pushy-link"><a href="gsa-migration.html">GSA Migration</a></li>
                     <li class="pushy-submenu">
                         <button>Search</button>
                         <ul>
-                            <li class="pushy-link"><a href="#ecommerce">Ecommerce</a></li>
-                            <li class="pushy-link"><a href="#web">Web</a></li>
-                            <li class="pushy-link"><a href="#document">Document</a></li>
+                            <li class="pushy-link"><a href="ecommerce-search.html">Ecommerce</a></li>
+                            <li class="pushy-link"><a href="web-search.html">Web</a></li>
+                            <li class="pushy-link"><a href="index-recognition.html">Document</a></li>
                         </ul>
                     </li>
                     <li class="pushy-link"><a href="#">Developer</a></li>
                     <li class="pushy-link"><a href="pricing.html">Pricing</a></li>
+                </ul>
+                <ul>
+                	<li class="pushy-link"><a href="#">Login</a></li>
+                	<li class="pushy-link"><a href="#">Sign up</a></li>
                 </ul>
             </div>
         </nav>
@@ -57,15 +61,14 @@
 	<header id="header">
 
 
-<div class="belt">
-	<button id="hamb" class="menu-btn" trigger="0">
-    	<div id="nav-icon1">
+
+
+    	<div id="nav-icon1" class="menu-btn" trigger="0">
 		  <span></span>
 		  <span></span>
 		  <span></span>
 	    </div> 
-    </button>
-</div>	
+
 
 
 	<div class="wrapper">
@@ -136,13 +139,13 @@
 				<nav class="menu">
 					<ul>
 				   	 <a href="#features"><li class="different paad">Features</li></a>
-				   	 <a href="#"><li class="different">GSA Migration</li></a>
+				   	 <a href="gsa-migration.html"><li class="different">GSA Migration</li></a>
 				     <a href="#"><li class="sub-menu-parent" tab-index="0">
 				       <p>Search Solutions</p>
 					       <ul class="sub-menu">
-					         <a href="#ecommerce"><li>Ecommerce search</li></a>
-					         <a href="#web"><li>Web search</li></a>
-					         <a href="#document"><li>Document search</li></a>
+					         <a href="ecommerce-search.html"><li>Ecommerce search</li></a>
+					         <a href="web-search.html"><li>Web search</li></a>
+					         <a href="index-recognition.html"><li>Document search</li></a>
 					       </ul>
 				       </li>
 				     </a>
@@ -159,9 +162,6 @@
 						<a href="#"><li>Sign up</li></a>
 				    </ul>
 				</nav>
-								 	<!-- Menu Button -->
-
-
 			</div>
 		</div>
 	</div>
@@ -191,7 +191,7 @@
 							<span><img class="flecha" src="img/flecha.svg"></span>
 						</a>
 					</div>
-					<h3>Contact us</h3>
+					<a href="#app-form"><h3>Contact us</h3></a>
 				</div>
 		</div>
 		<div class="piece cielo2">
@@ -218,40 +218,46 @@
 
 <div class="wrapper">
 	    <div id="features" class="box1">
-	    	<h2>Ready to use smart tool</h2>
+	    	<h2>Ready to use smart tooly</h2>
 	    	<div class="pleca"></div>
 	    </div>
-		<div class="flexible">
-			<div id="barra" class="element">
+		<div id="pinned" class="flexible">
+			<div id="pinned-element1" class="element spinned">
 				<img class="icono" src="img/crawler-icon.svg">
 				<h4>Website</h4>
 				<h3>Website Search</h3>
 				<p>Next generation crawler, we can follow javascript generated links, mahe thumbnails of final DOM render state, follow robots.txt and sitemap.</p>
 			</div>
-			<div class="element"> 
+			<div id="pinned-element1" class="element spinned"> 
 				<img class="icono" src="img/ecommerce-icon.svg">
 				<h4>Ecommerce</h4>
 				<h3>Ecommerce Search</h3>
 				<p>Crawl any kind of database with our custom connectors</p>
 			</div>
-			<div class="element">
+			<div id="pinned-element1" class="element spinned">
 				<img class="paper" src="img/indexing-icon.svg">
 				<h4>Ecommerce</h4>
 				<h3>Document Indexing<br>and Recognition</h3>
 				<p>Can index content inside a PDF, doc, xls, ppt.</p>
 			</div>
 		</div>
+
+
 </div>
-
-
 
 
 
 <div class="wrapper8">
 	<div class="spacer"></div>
+	<div class="slogan">
+		<p>The agility to integrate your content to maximize productivity and business value</p>
+	</div>
 	<div class="spacer2"></div>
 </div>
 
+<div class="wrapper9">
+	<img class="rPhoto" src="img/mac.svg" alt="mac" data-parallax='{"y" : -80, "from-scroll":1300, "distance": 0}'/>
+</div>
 
 
 
@@ -264,7 +270,7 @@
     <div id="trigger1" class="whySection" data-parallax="{&quot;y&quot;: -40}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
         <div class="leftSvg">
 
-        	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	<svg class="meddio" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				 viewBox="0 0 264.2 489.3" style="enable-background:new 0 0 264.2 489.3;" xml:space="preserve">
 			<style type="text/css">
 				.st0{fill:none;stroke:#344C6F;stroke-width:0.8;stroke-miterlimit:10;}
@@ -274,10 +280,6 @@
 			</svg>
 
         </div>
-<!--         <div class="rightPhoto"><img data-parallax='{"x": 700, "y":200, "from-scroll":2400, "distance": 0}' 
-                  data-parallax2='{"y": 100, "from-scroll": 2600, "distance": 40}' src="img/mac.svg"></div> -->
-
-                  <img class="rightPhoto" src="img/mac.svg" alt="mac" data-parallax='{"y" : -230}'/>
 
 
 
@@ -373,11 +375,11 @@
 		<div class="flexible m140">
 			<div class="box">
 				<h2>Stable Searching Platform</h2>
-				<h4 class="blue">Powered by Google Cloud</h4>
-				<p>Stable and easy-to-use interface and personalized user experience which offers a better search experience.<br>It is powered by Google Cloud.</p>
+				<h4 class="blue">Powered by Google Cloud Platform</h4>
+				<p>Stable and easy-to-use interface and personalized user experience which offers a better search experience.<br>It is powered by Google Cloud Platform.</p>
 			</div>
 				<div class="sbox">
-					<div class="haute"><img src="img/color-cloud.png" class="nube"></div>
+					<div class="haute"><img src="img/color-cloud.png" class="caja"></div>
 					<h3>With a service from the cloud</h3>
 				</div>
 				<div class="sbox">
@@ -390,6 +392,8 @@
 				</div>
 		</div>
 	</div>
+
+
 
 
 
@@ -421,20 +425,20 @@
 			<h3>Website</h3>
 			<h2>Website Search</h2>
 			<div class="centered">
-			<img class="computer" src="img/computer.png">
+			<img id="foto1" class="computer" src="img/computer.png">
 		    </div>
 	    </div>
 	</div>
 </div>
 
 <div id="ecommerce" class="wrapper m80">
-	<div class="sflexible">
+	<div class="sflexible under2">
 		<div class="spacer21"></div>
 		<div class="bebox">
 			<h3>Ecommerce</h3>
 			<h2>Ecommerce Search</h2>
 			<div class="centered">
-				<img class="ecommerce" src="img/ecommerce.png">
+				<img id="foto2" class="ecommerce" src="img/ecommerce2.png">
 		    </div>
 	    </div>
 	    <div class="bebox left">
@@ -449,7 +453,7 @@
 </div>
 
 <div id="document" class="wrapper m80">
-	<div class="sflexible cfondo">
+	<div class="sflexible cfondo under3">
 		<div class="bbox right">
 			<div class="spacer4"></div>
 			<ul>
@@ -461,7 +465,11 @@
 			<h3>Document</h3>
 			<h2>Document Index<br>and Recognition</h2>
 			<div class="centered">
+<<<<<<< HEAD
 				<img class="computer2" src="img/crawler.png">
+=======
+				<img id="foto3" class="computer2" src="img/indexing.png">
+>>>>>>> f10d29d613f8e9092973eafb43b1de1f93545993
 		    </div>
 	    </div>
 	</div>
@@ -471,29 +479,54 @@
 <div class="wrapper">
 	<div class="box1">
 		<div class="spacer21"></div>
-    	<h2>Nuestros clientes</h2>
+    	<h2>Our satisfied customers</h2>
+<!--     	<h3>What do they say?</h3> -->
     	<div class="pleca"></div>
 </div>
 
 
 <ul class="logos-flex-container">
     <li class="logos-flex-item">
-      <a href=""><img src="fotos/senado.png" class="senado"></a>
+      <a href="">
+      	<img src="fotos/banorte_azul.png" class="banorte-azul">
+      	<img src="fotos/banorte.png" class="banorte">   
+      </a>
     </li>
     <li class="logos-flex-item">
-      <a href=""><img src="fotos/telmex.png" class="telmex"></a>
+      <a href="">
+      	<img src="fotos/citi_azul.png" class="citi-azul">
+      	<img src="fotos/citi.png" class="citi">  	
+      </a>
     </li>
     <li class="logos-flex-item">
-      <a href=""><img src="fotos/citi.png" class="citi"></a>
+      <a href="">
+      	<img src="fotos/telmex_azul.png" class="telmex-azul">
+      	<img src="fotos/telmex.png" class="telmex">
+      </a>
     </li>
     <li class="logos-flex-item">
-      <a href=""><img src="fotos/tpj.png" class="tpj"></a>
+      <a href="">
+      	<img src="fotos/lacomer_azul.png" class="lacomer-azul">
+      	<img src="fotos/lacomer.png" class="lacomer">
+      </a>
     </li>
     <li class="logos-flex-item">
-      <a href=""><img src="fotos/televisa.png" class="televisa"></a>
+      <a href="">
+      	<img src="fotos/televisa_azul.png" class="televisa-azul">
+      	<img src="fotos/televisa.png" class="televisa">
+      </a>
     </li>
     <li class="logos-flex-item">
-      <a href=""><img src="fotos/banorte.png" class="banorte"></a>
+      <a href="">
+      	<img src="fotos/senado_azul.png" class="senado-azul">
+      	<img src="fotos/senado.png" class="senado">
+      </a>
+    </li>
+    <li class="logos-flex-item">
+      <a href="">
+      	<img src="fotos/tpj_azul.png" class="tpj-azul">
+      	<img src="fotos/tpj.png" class="tpj">
+      </a>
     </li>
 </ul>
 </div>
@@ -530,32 +563,67 @@
 		</div>
 		<div class="bbox padded">
 			  <div class="spacer2"></div>
-	          <div class="app-form">
-	          	    <div class="box3">
-			          	<h3>Contact us</h3>
-			          	<div class="pleca3"></div>
-			        </div>
-	            <div class="app-form-group margen">
-	              <input class="app-form-control" placeholder="name">
-	            </div>
-	            <div class="app-form-group">
-	              <input class="app-form-control" placeholder="email">
-	            </div>
-	            <div class="app-form-group">
-	              <input class="app-form-control" placeholder="phone">
-	            </div>
-	            <div class="app-form-group message">
-	              <input class="app-form-control2" placeholder="message">
-	            </div>
-	            <div class="app-form-group buttons">
-	              <a href="#">
-	              	<div class="app-form-button">
-	              	    Send Message
-	              	    <span><img class="flecha" src="img/flecha.svg"></span>
-	              	</div>
-	              </a>
-	            </div>
-	          </div>
+
+			  <form action="contact.php" method="post">
+		          <div id="app-form" class="app-form">
+		          	    <div class="box3">
+				          	<h3>Contact us</h3>
+				          	<div class="pleca3"></div>
+				        </div>
+
+	                <div class="app-form-group1 margen">
+		              <select name="choose">
+		              	<option>Purchase of a product1</option>
+		              	<option>Support</option>
+		              </select>
+		            </div>
+
+
+		            <div class="app-form-group">
+		              <input class="app-form-control" name="name" placeholder="name">
+		            </div>
+		            <div class="app-form-group">
+		              <input class="app-form-control" name="email" placeholder="email">
+		            </div>
+		            <div class="app-form-group">
+		              <input class="app-form-control" name="empresa" placeholder="empresa">
+		            </div>
+		            <div class="app-form-group message">
+		              <input class="app-form-control2" name="message" placeholder="message">
+		            </div>
+
+
+		            <button class="app-form-button" type="submit" name="submit" value="send">
+			            Send message
+			        	<span><img class="flecha" src="img/flecha.svg"></span>
+		    		</button>
+		          </div>
+	          </form>
+
+	          <script type="text/javascript">
+	          	
+	          	var rotate = document.getElementClassName('app-form-group1');
+					rotate.addEventListener('click', function() {
+					   // rotate.classList.add('rotated');
+
+					var color = window.getComputedStyle(document.querySelector('.app-form-group1'), '::before')
+	                  .getPropertyValue('content');
+
+	                  color.addEventListener('click', function(){
+
+	                  })
+
+	                  color.classList.add('colur');
+
+			
+
+
+
+	          </script>
+
+
+
+
 	          <div class="medios">
 	          	<h3>Follow us on</h3>
 		          <a href="#"><img class="media" src="fotos/twitter.svg"></a>
@@ -564,6 +632,9 @@
 		</div>
 	</div>
 </div>
+
+
+<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 
 
 
@@ -576,20 +647,24 @@
 
 
 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js'></script>
 <script src="xjs/jquery-2.1.3.min.js"></script>
-<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="js/ScrollMagic.js"></script>
+<script type="text/javascript" src="js/animation.gsap.js"></script>
+<!-- <script type="text/javascript" src="js/debug.addIndicators.js"></script> -->
 
+
+
+<script type="text/javascript" src="js/scroll.js"></script>
 <script type="text/javascript" src="xjs/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="xjs/jquery.parallax-scroll.js"></script>
 
 
 <!--   JS para animacion de lineas y circulos    -->
 
-<script type="text/javascript" src="js/modernizr.custom.min.js"></script>
-<script type="text/javascript" src="js/TweenMax.min.js"></script>
-<script type="text/javascript" src="js/ScrollMagic.js"></script>
-<script type="text/javascript" src="js/animation.gsap.js"></script>
-<!-- <script type="text/javascript" src="js/debug.addIndicators.js"></script> -->
+<!-- <script type="text/javascript" src="js/modernizr.custom.min.js"></script> -->
+
+<!-- <script src="xjs/animate.js"></script> -->
 
 
 <script>
@@ -632,6 +707,8 @@
 							.add(TweenLite.to($word4, 0.2, {stroke: "#33629c",strokeDashoffset: 0, ease:Linear.easeNone}), "-=0.1") 
 							.add(TweenLite.to($word2, 0.2, {stroke: "#33629c",strokeDashoffset: 0, ease:Linear.easeNone}), "-=0.08") 
 						    .add(TweenLite.to($word, 0.2, {stroke: "#33629c",strokeDashoffset: 0, ease:Linear.easeNone}), "-=0.03")
+
+						    
 						    .fromTo(".target", 0.2, {opacity:0},{opacity:1},"-=0.6")
 						    // TweenLite.to(".element", 0.5,{autoAlpha:0, y:50})
 
@@ -639,8 +716,58 @@
 						// build scene
 						var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 10, tweenChanges: true})
 										.setTween(tween)
-										.addIndicators()
 										.addTo(controller);
+
+
+
+$('#foto1').each(function(){
+	var scene4 = new ScrollMagic.Scene({
+	triggerElement:'.under',
+	duration:0
+	})
+	.setClassToggle("#foto1", "visible")
+	.addTo(controller);
+});
+
+$('#foto2').each(function(){
+	var scene5 = new ScrollMagic.Scene({
+	triggerElement:'.under2',
+	duration:0
+	})
+	.setClassToggle("#foto2", "visible")
+	.addTo(controller);
+});
+
+$('#foto3').each(function(){
+	var scene6 = new ScrollMagic.Scene({
+	triggerElement:'.under3',
+	duration:0
+	})
+	.setClassToggle("#foto3", "visible")
+	.addTo(controller);
+});
+
+
+
+
+ 			
+var tl = new TimelineLite();
+tl.staggerFrom(".spinned", 0.3, {
+  autoAlpha: 0,
+  y: 100,
+  ease: Linear.easeNone,
+  stagger: {
+    from: "left",
+    amount: 0.4
+  }
+});
+
+var scene2 = new ScrollMagic.Scene({
+  triggerElement: "#pinned"
+})
+  .setTween(tl)
+  .addTo(controller);				
+
 
 
 
@@ -649,8 +776,10 @@
 
 
 <script src="xjs/pushy.min.js"></script>
-<script src="xjs/script.js"></script>
+<script src="xjs/script.js"></script> 
 <script src="xjs/target.js"></script>
+<script src="xjs/top.js"></script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.7/lottie.js"></script>	
 <script type="text/javascript" src="xjs/index.js"></script>

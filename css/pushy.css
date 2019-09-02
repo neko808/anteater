@@ -26,6 +26,12 @@
 .pushy ul:first-child {
   margin-top: 10px;
 }
+.pushy ul:last-child {
+  margin-top: 10px;
+}
+.pushy ul:last-child a {
+  color: #01ecfa;
+}
 .pushy.pushy-left {
   left: 0;
 }
@@ -99,7 +105,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1000;
   background-color: rgba(0, 0, 0, 0.4);
   -webkit-animation: fade 500ms;
   animation: fade 500ms;

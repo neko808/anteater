@@ -29,7 +29,6 @@
 .whyTable .whyColumnLeft h2 {
 	font-family: 'Roboto', sans-serif;
     font-size: 32px;
-    line-height: 39px;
     font-weight: 700;
     color: white;
     z-index: 10;
@@ -135,6 +134,10 @@
         left: 0;
         z-index: 0;
         top: -270px;
+    }
+
+    .icons .iconRow .title{
+        font-size: 15px;
     }
 }
 

@@ -5,6 +5,16 @@ handlers:
     static_files: index.html
     upload: index\.html
     secure: always
+
+  - url: /pricing.html
+    static_files: pricing.html
+    upload: pricing.html
+    secure: always
+  
+  - url: /data.json
+    static_files: data.json
+    upload: data.json
+    secure: always
   
   - url: /img/
     static_dir: img

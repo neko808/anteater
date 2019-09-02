@@ -10,6 +10,26 @@ handlers:
     static_files: pricing.html
     upload: pricing.html
     secure: always
+
+  - url: /ecommerce-search.html
+    static_files: ecommerce-search.html
+    upload: ecommerce-search.html
+    secure: always
+
+  - url: /gsa-migration.html
+    static_files: gsa-migration.html
+    upload: gsa-migration.html
+    secure: always
+
+  - url: /index-recognition.html
+    static_files: index-recognition.html
+    upload: index-recognition.html
+    secure: always
+
+  - url: /web-search.html
+    static_files: web-search.html
+    upload: web-search.html
+    secure: always
   
   - url: /data.json
     static_files: data.json

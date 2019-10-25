@@ -40,5 +40,6 @@ if(process.env.NODE_ENV === 'dev') {
 app.post('/contact', postFormulario(firebase, sgMail))
 
 app.listen(process.env.PORT || 8080, () => {
+    console.log({SENDGRID_API_KEY: process.env.SENDGRID_API_KEY})
     console.log(`Running at PORT ${process.env.PORT || 8080}`);
 });

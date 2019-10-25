@@ -7,12 +7,13 @@ export class TemplateService {
     }
 
     async getTemplate(name, payload) {
+        console.log(__dirname)
+        const path = `${__dirname}/../../templates/${name}`; 
         try {
-            const path = `${__dirname}/templates/${name}`; 
             const template = fs.readFileSync(path, 'utf8');
             return mustache.render(template, payload);
         } catch (error) {
-            throw new Error(`No se pudo encontrar el template ${path}`);
+            throw new Error(`Cannot find ${path} template`);
         }
     }
 }

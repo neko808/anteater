@@ -13,12 +13,21 @@ export const postFormulario = (firebase, sgMail) => async (req, res) => {
             html: template
         }
 
-        await sgMail.send(msg);
+        try {
+            await sgMail.send(msg);
+        } catch( error ) {
+            console.log(error);
+            res.status(400).send({
+                message: error.response.body.errors.map(x => x.message)
+            })
+        }
+
         return res.send({
             status: 'OK',
             message: `Thanks for writing. We will contact you soon!`
         })
     } catch (error) {
+        console.log(error)
         res.status(500).send({
             message: `${error.name}: ${error.message}`,
         })

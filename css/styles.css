@@ -541,7 +541,7 @@ ul.ball li {
 }
 
 .sbox{
-	flex: 0 1 33%;
+	flex: 0 1 50%;
 	text-align: center;
 	margin-bottom: 30px;
 }

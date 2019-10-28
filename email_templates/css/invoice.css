@@ -1,0 +1,223 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #f0f0f0;
+}
+.container{
+	position: relative;
+	max-width: 600px;
+	width: 100%;
+	padding: 0px 42px 12px;
+}
+
+.fcontainer{
+	max-width: 600px;
+	width: 100%;
+	margin: 40px auto;
+	background-color: white;
+	-webkit-box-shadow: 0px 3px 6px -5px rgba(0,0,0,0.75);
+ 	-moz-box-shadow: 0px 3px 6px -5px rgba(0,0,0,0.75);
+  	box-shadow: 0px 3px 6px -5px rgba(0,0,0,0.75);
+  	-webkit-border-radius: 12px;
+	  -moz-border-radius: 12px;
+	  border-radius: 12px;
+}
+
+@media screen and (max-width:480px){
+	.container{
+		padding: 0px 18px 12px;
+	}
+}
+
+.title{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.item h2{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 1.4em;
+	color: #525f7f;
+}
+
+.content{
+	max-width: 600px;
+	width: 100%;
+}
+
+footer{
+	max-width: 600px;
+	width: 100%;
+}
+
+.space{
+	width: 100%;
+	height: 400px;
+}
+
+.space2{
+	width: 100%;
+	height: 22px;
+}
+
+.caja{
+	max-width: 100%;
+	height: 122px;
+	padding: 24px;
+	background-image: url('../img/fondo3.png');
+	background-repeat: no-repeat;
+	background-size: 600px 122px;
+	-webkit-border-radius: 12px;
+	  -moz-border-radius: 12px;
+	  border-radius: 12px;
+}
+
+.cell{
+	background-color: #f6f9fc;
+	-webkit-border-radius: 8px;
+	  -moz-border-radius: 8px;
+	  border-radius: 8px;
+	  padding: 0 22px;  
+	  margin: 8px 0px;
+}
+
+.scell{
+    display: flex;
+	flex-wrap: wrap;
+	padding: 14px 0px;
+	border-bottom: 1px solid #e6ebf1;
+}
+
+.wcell{
+	flex: 1;
+}
+
+.wcell:first-child{
+	flex-basis: 70%;
+}
+
+.scell:last-child{
+	border: none;
+}
+
+.wcell h3{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 0.9em;
+	color: #525f7f;
+}
+
+.first h3{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 0.9em;
+	color: #3a65e5;
+}
+
+.second h3{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 0.9em;
+	/*color: #d0d0d0;*/
+	color: #3a65e5;
+}
+
+.logo{
+	width: 90px;
+}
+
+.caja2{
+	width: 100%;
+	padding: 30px 0px;
+	border-bottom: 1px solid #e6ebf1;
+}
+
+.caja2 p{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 0.9em;
+	color: #282828;
+	line-height: 22px;
+}
+
+.caja3{
+	width: 100%;
+	padding: 30px 0px;
+}
+
+.caja3 p{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 0.7em;
+	color: #8898aa;
+	line-height: 18px;
+}
+
+.barra{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.face{
+	flex:1;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 0.8em;
+	color: #525f7f;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.face1{
+	flex:1;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 0.9em;
+	color: #525f7f;
+	text-transform: uppercase;
+}
+
+.blue h3{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 0.9em;
+	color: #525f7f;
+}
+
+.box{
+	width: 100%;
+	height: auto;
+	margin: 28px 0px 34px;
+}
+
+.box2{
+	width: 100%;
+	height: auto;
+	margin: 28px 0px 0px;
+}
+
+.item{
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 22px 0px 22px;
+}
+
+.item:last-child{
+	justify-content: flex-end;
+}
+
+.item h3{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 0.9em;
+	color: #3a65e5;
+}
+

@@ -557,7 +557,7 @@
 		<div class="bbox padded">
 			  <div class="spacer2"></div>
 
-			  <form action="contact.php" method="post">
+			  <form id="formulario-contacto">
 		          <div id="app-form" class="app-form">
 		          	    <div class="box3">
 				          	<h3>Contact us</h3>
@@ -586,7 +586,7 @@
 		            </div>
 
 
-		            <button class="app-form-button" type="submit" name="submit" value="send">
+		            <button type="button" class="app-form-button" id="submit-form-button" value="send">
 			            Send message
 			        	<span><img class="flecha" src="img/flecha.svg"></span>
 		    		</button>
@@ -659,7 +659,7 @@
 
 <!-- <script src="xjs/animate.js"></script> -->
 
-
+<script type="text/javascript" src="js/funcionalidad-formulario.js"></script>
 <script>
 						function pathPrepare ($el) {
 							var lineLength = $el[0].getTotalLength();

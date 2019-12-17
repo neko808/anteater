@@ -797,3 +797,134 @@ ul.ball li {
 	}
 }
 
+/*   Launch Modal    */
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  background: rgba(0,0,0, .6);
+  transition: opacity .25s ease;
+  z-index: 1000;
+}
+
+.modal__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.modal-state {
+  display: none;
+}
+
+.modal-state:checked + .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-state:checked + .modal .modal__inner {
+  top: 0;
+}
+
+.modal__inner {
+  transition: top .25s ease;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  margin: auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 1em 2em;
+  height: 260px;
+}
+
+.modal__close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+.modal__close:after,
+.modal__close:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #ccc;
+  display: block;
+  transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.modal__close:hover:after,
+.modal__close:hover:before {
+  background: #aaa;
+}
+
+.modal__close:before {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+	
+  .modal__inner {
+    width: 90%;
+    height: 35%;
+    box-sizing: border-box;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  background: #01ecfa;
+  display: inline-block;
+  padding: 0.8rem 1.7rem;
+  color: #1a2751;
+  border-radius: 50px;
+  outline: none;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  letter-spacing: 2px;
+  margin-top: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.modal__inner h3 {
+   font-family: 'Roboto', sans-serif;
+   font-size: 1.2em;
+   font-weight: 400;
+   color: #000;
+   text-align: center;
+}
+
+.antena{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.antena img{
+	width: 100px;
+}
+

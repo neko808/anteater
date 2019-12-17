@@ -20,3 +20,9 @@ if ($('#back-to-top').length) {
         }, 700);
     });
 }
+
+
+
+// $('#submit-form').on('click', function(){
+//     $('.modal').toggleClass('appear');
+// })

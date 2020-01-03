@@ -28,13 +28,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 if(process.env.NODE_ENV === 'dev') {
-    app.use('/template', express.static(__dirname+ '/../email_templates'))
-    app.use('/foo', express.static(__dirname + '/../index.html'));
-    app.use('/js', express.static(__dirname + '/../js'));
-    app.use('/css', express.static(__dirname + '/../css'));
-    app.use('/fotos', express.static(__dirname + '/../fotos'));
-    app.use('/img', express.static(__dirname + '/../img'));
-    app.use('/xjs', express.static(__dirname + '/../xjs'));
+    app.use('/template', express.static(__dirname+ '/../views/email_templates'))
+    app.use('/foo', express.static(__dirname + '/../views/index.html'));
+    app.use('/js', express.static(__dirname + '/../views/js'));
+    app.use('/css', express.static(__dirname + '/../views/css'));
+    app.use('/fotos', express.static(__dirname + '/../views/fotos'));
+    app.use('/img', express.static(__dirname + '/../views/img'));
+    app.use('/xjs', express.static(__dirname + '/../views/xjs'));
 }
 
 app.post('/contact', postFormulario(firebase, sgMail))

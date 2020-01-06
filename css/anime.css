@@ -20,18 +20,18 @@
 	flex-wrap: wrap;
 }
 
-.whyTable .whyColumnLeft {
-	flex: 0 1 360px;
+.whyColumnLefto{
+    flex: 0 1 360px;
     display: flex;
     align-items: center;
 }
 
-.whyTable .whyColumnLeft h2 {
-	font-family: 'Roboto', sans-serif;
+.whyColumnLefto h2{
+    font-family: 'Roboto', sans-serif;
     font-size: 32px;
     font-weight: 700;
     color: white;
-    z-index: 10;
+    line-height: 43px;
 }
 
 .whyTable .whyColumnCenter {

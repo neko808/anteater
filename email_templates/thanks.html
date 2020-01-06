@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Welcome</title>
+
+	<!-- <link rel="stylesheet" type="text/css" href="css/email.css"> -->
+	<style type="text/css" media="screen">
+		/* Add style rules here */
+
+		body {
+			background-color: #f2f2f2;
+		}
+
+		.wrapper {
+			position: relative;
+			max-width: 500px;
+			width: 100%;
+			height: auto;
+			margin: 40px auto;
+			background-color: white;
+			-webkit-box-shadow: 0px 3px 6px -5px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 0px 3px 6px -5px rgba(0, 0, 0, 0.75);
+			box-shadow: 0px 3px 6px -5px rgba(0, 0, 0, 0.75);
+			-webkit-border-radius: 12px;
+			-moz-border-radius: 12px;
+			border-radius: 12px;
+		}
+
+		.flexi {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+
+		.logo {
+			width: 90px;
+		}
+
+		.space {
+			width: 100%;
+			height: auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+
+		.space2 {
+			width: 100%;
+			height: 20px;
+		}
+
+		.rocket {
+			width: 40px;
+			height: auto;
+			margin-right: 10px;
+		}
+
+		.box {
+			box-sizing: border-box;
+			width: 100%;
+			padding: 10px 38px 38px 38px;
+		}
+
+		.box2 h2 {
+			font-family: 'Be Vietnam', sans-serif;
+			font-weight: 300;
+			color: white;
+			text-align: center;
+		}
+
+		.box p {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 400;
+			font-size: 0.9em;
+			color: #282828;
+		}
+
+		.blue {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 400;
+			font-size: 1em;
+			color: #787b8c;
+			text-transform: uppercase;
+		}
+
+		.bold {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 400;
+			font-size: 1em;
+			color: #787b8c;
+		}
+
+		.box2 {
+			height: 180px;
+			padding: 24px;
+			background-image: url('https://firebasestorage.googleapis.com/v0/b/amarello-anteater-devqa.appspot.com/o/static%2Ffondo.png?alt=media&token=24854e6c-9870-4f7b-8a98-0ae418cfd559');
+			background-repeat: no-repeat;
+			background-size: 500px 227px;
+			-webkit-border-radius: 12px;
+			-moz-border-radius: 12px;
+			border-radius: 12px;
+		}
+
+		.box4 {
+			height: 180px;
+			padding: 24px;
+			background-image: url('https://firebasestorage.googleapis.com/v0/b/amarello-anteater-devqa.appspot.com/o/static%2Ffondo2.png?alt=media&token=12f1ae94-d269-4ebf-9b8c-a6c68ebdc1bb');
+			background-repeat: no-repeat;
+			background-size: 500px 216px;
+			-webkit-border-radius: 12px;
+			-moz-border-radius: 12px;
+			border-radius: 12px;
+		}
+
+		.box4 h2 {
+			font-family: 'Be Vietnam', sans-serif;
+			font-weight: 300;
+			color: white;
+			text-align: center;
+		}
+
+
+		.box3 {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 40px;
+		}
+
+		.button {
+			display: inline-block;
+			background-color: #3a65e5;
+			color: white;
+			padding: 12px 25px;
+			border-radius: 4px;
+			text-align: center;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 400;
+			font-size: 0.9em;
+			color: white;
+		}
+
+		.button:hover {
+			background-color: #4a77fe;
+		}
+
+		h4.title {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 700;
+			font-size: 0.9em;
+			color: #3a65e5;
+			margin-top: 0px;
+		}
+
+		hr.line {
+			border: 0;
+			height: 0;
+			border-top: 1px solid rgba(0, 0, 0, 0.1);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+		}
+
+		.run {
+			width: 80px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.facebook {
+			width: 40px;
+			height: auto;
+		}
+
+		.twitter {
+			width: 40px;
+			height: auto;
+		}
+	</style>
+
+	<link href="https://fonts.googleapis.com/css?family=Be+Vietnam:300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="box2">
+			<div class="flexi">
+				<div class="logo"><img
+						src="https://firebasestorage.googleapis.com/v0/b/amarello-anteater-devqa.appspot.com/o/static%2FAntEater.svg?alt=media&token=c1c14664-4ab6-413e-a80c-b4eecfe91069">
+				</div>
+			</div>
+			<div class="space">
+				<h2>Welcome {{name}}!</h2><br>
+			</div>
+		</div>
+
+		<div class="fondo"></div>
+
+		<div class="box">
+			<div class="center">
+				<h3 class="blue">Congratulations!</h3><span class="bold">Now you are part of the Anteater`s team<br>
+					So we`ve set off on a mission to help.</span>
+			</div><br>
+
+			<p>You have now one month access to the free trial of a next generation search tool.
+
+				In case you need assistance, feel free to contact us.<br><br>
+
+				<br>
+
+				Best regards <br></p>
+			<h4 class="title">Anteater`s team.</h4>
+			<hr class="line">
+			<div class="box3">
+				<a href="#">
+					<div class="button">Go to your free trial</div>
+				</a>
+			</div>
+		</div>
+
+
+
+	</div>
+
+</body>
+
+</html>

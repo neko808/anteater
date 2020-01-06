@@ -540,15 +540,41 @@ footer h3{
 	transform: translate(0, 0);
 }
 
-.sbox:nth-child(3) .haute2{
+.cbox:nth-child(3) .haute2{
 	background-image: url(../fotos/line2.svg);
 	background-position: center;
 	background-size: 250px 100px;
 	background-repeat: no-repeat;
-	max-height: 400px;
-	width: 100%;
 	box-sizing: border-box;
 	padding: 0px 40px;
+}
+
+@media screen and (min-width:619px) and (max-width: 768px) {
+  .cbox:nth-child(3) .haute2{
+     background-size: 200px 100px;
+  }
+}
+
+@media screen and (max-width: 618px) {
+  .cbox{
+  	margin-bottom: 0;
+  }
+
+   .cbox:nth-child(2) .haute2{
+
+  	height: 230px;
+  }
+
+  .cbox:nth-child(3) .haute2{
+  	background-image: url(../fotos/up-arrow.svg);
+  	background-repeat: no-repeat;
+  	background-size: 250px 140px;
+  	height: 160px;
+  }
+
+  .cbox:nth-child(4) .haute2{
+  	height: 400px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -557,6 +583,10 @@ footer h3{
 	}
 
   .haute{
+  	height: 200px;
+  }
+
+  .haute2{
   	height: 200px;
   }
 
@@ -581,13 +611,6 @@ footer h3{
 
   .sbox:nth-child(4){
   	order: 1;
-  }
-
-  .sbox:nth-child(3) .haute2{
-  	background-image: url(../fotos/up-arrow.svg);
-  	background-repeat: no-repeat;
-  	background-size: 250px 140px;
-  	height: 200px;
   }
 }
 

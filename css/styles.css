@@ -560,6 +560,21 @@ ul.ball li {
 	font-weight: 600;
 }
 
+.cbox{
+	flex: 0 1 33%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+@media screen and (max-width: 618px) {
+	.cbox{
+		flex: 0 1 100%;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}
+
+
 @media screen and (max-width: 480px) {
    .sbox{
 		flex: 0 1 100%;

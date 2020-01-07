@@ -9,7 +9,6 @@ function scrollFunction() {
     document.getElementById("header").classList.add('water');
     document.getElementById("header").classList.add('basic');
     document.getElementById("header").classList.add('fondo');
-    console.log('scroll')
   } else {
     document.getElementById("header").classList.remove('minum');
     document.getElementById("header").classList.remove('water');

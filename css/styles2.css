@@ -482,6 +482,11 @@ footer h3{
 	align-items: center;
 }
 
+#contactus{
+	border: none;
+	outline: none;
+}
+
 .contactus h3{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.1em;

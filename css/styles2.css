@@ -860,6 +860,7 @@ header .xword .world{
 	display: flex;
 	justify-content: center;
 	top: 90px;
+	z-index: 100;
 }
 
 .slogan p{

@@ -557,7 +557,7 @@
 				        </div>
 
 	                <div class="app-form-group1 margen">
-		              <select name="choose">
+		              <select id="elegir" name="choose">
 		              	<option>Purchase of a product</option>
 		              	<option>Support</option>
 		              </select>
@@ -565,21 +565,17 @@
 
 
 		            <div class="app-form-group">
-		              <input class="app-form-control" name="name" placeholder="name">
+		              <input class="app-form-control" id="name" name="name" placeholder="name">
 		            </div>
 		            <div class="app-form-group">
-		              <input class="app-form-control" name="email" placeholder="email">
+		              <input class="app-form-control" id="email" name="email" placeholder="email">
 		            </div>
 		            <div class="app-form-group">
-		              <input class="app-form-control" name="empresa" placeholder="empresa">
+		              <input class="app-form-control" id="empresa" name="empresa" placeholder="empresa">
 		            </div>
 		            <div class="app-form-group message">
-		              <input class="app-form-control2" name="message" placeholder="message">
+		              <input class="app-form-control2" id="message" name="message" placeholder="message">
 		            </div>
-<!-- 		            <button type="button" class="app-form-button" id="submit-form" value="send">
-			            Send message
-			        	<span><img class="flecha" src="img/flecha.svg"></span>
-		    		</button> -->
 
 		          </div>
 	          </form>
@@ -587,27 +583,22 @@
 
 	          <!--      Aqui empieza el Modal    -->
 
-			<div>
-			   <p>
-			     <label class="btn app-form-button" for="modal-1">
-			     	Send Message
-			     	<span><img class="flecha" src="img/flecha.svg"></span>
-			 	 </label>
-			   </p>
+
+			<button class="showy" aria-haspopup="true">
+				 Send Message
+			     <span><img class="flecha" src="img/flecha.svg"></span>
+			</button>
+
+			<div class="mask" role="dialog"></div>
+			<div class="modal" role="alert">
+			    <button class="close" role="button">X</button>
+			    <div class="antena">
+					<img src="img/antena.svg">
+				</div>
+				<h3>Your message has been sent, We will contact you soon!</h3>
 			</div>
 
-			<input class="modal-state" id="modal-1" type="checkbox" />
 
-			<div class="modal">
-			    <label class="modal__bg" for="modal-1"></label>
-			    <div class="modal__inner">
-				    <label class="modal__close" for="modal-1"></label>
-				    <div class="antena">
-				    	<img src="img/antena.svg">
-				    </div>
-				    <h3>Your message has been sent, We will contact you soon!</h3>
-			    </div>
-			</div>
 
 
 			<!--       Aqui termina Modal     -->
@@ -769,6 +760,7 @@ var scene2 = new ScrollMagic.Scene({
 <script src="xjs/script.js"></script> 
 <script src="xjs/target.js"></script>
 <script src="xjs/top.js"></script>
+<script src="xjs/modal.js"></script>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.7/lottie.js"></script>	

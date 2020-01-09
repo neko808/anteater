@@ -1,0 +1,11 @@
+
+@mixin themable($theme-name, $theme-map) {
+   .#{$theme-name} {
+       .container {
+           .left, .right {
+               font-size: 2rem;
+           }
+       }
+    }
+}
+

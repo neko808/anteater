@@ -836,17 +836,7 @@ ul.ball li {
 .showy:active {
   transform: scale(0.9);
 }
-.close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 35px;
-  height: 30px;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-  border: 0;
-}
+
 .mask {
   position: fixed;
   top: 0;
@@ -907,6 +897,9 @@ ul.ball li {
 	left: 5px;
 }
 
+/*.disabled {
+	opacity: 0.7;
+}*/
 
 @media screen and (max-width: 480px){
 	.modal{
@@ -915,4 +908,70 @@ ul.ball li {
 		margin-top: 0px;
   		margin-left: 0px;
 	}
+}
+
+.modal2 {
+  position: fixed;
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  max-width: 440px;
+  width: 100%;
+  height: 160px;
+  margin-top: -80px;
+  margin-left: -220px;
+  background: rgba(255,255,255,1);
+  border-radius: 5px;
+  padding: 1em 2em;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease-out;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flexi{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.alerta img{
+	width: 40px;
+	margin-right: 10px;
+}
+
+.close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+.close:after,
+.close:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #ccc;
+  display: block;
+  transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.close:hover:after,
+.close:hover:before {
+  background: #aaa;
+}
+
+.close:before {
+  transform: rotate(-45deg);
 }

@@ -549,7 +549,7 @@
 		<div class="bbox padded">
 			  <div class="spacer2"></div>
 
-			  <form id="formulario-contacto">
+			  <form id="formulario-contacto" name="formulario-contacto" action="">
 		          <div id="app-form" class="app-form">
 		          	    <div class="box3">
 				          	<h3>Contact us</h3>
@@ -557,9 +557,9 @@
 				        </div>
 
 	                <div class="app-form-group1 margen">
-		              <select id="elegir" name="choose">
+		              <select id="elegir" name="choose" value="support">
 		              	<option>Purchase of a product</option>
-		              	<option>Support</option>
+		              	<option value="support">Support</option>
 		              </select>
 		            </div>
 
@@ -571,23 +571,23 @@
 		              <input class="app-form-control" id="email" name="email" placeholder="email">
 		            </div>
 		            <div class="app-form-group">
-		              <input class="app-form-control" id="empresa" name="empresa" placeholder="empresa">
+		              <input class="app-form-control" id="empresa" name="company" placeholder="company">
 		            </div>
 		            <div class="app-form-group message">
 		              <input class="app-form-control2" id="message" name="message" placeholder="message">
 		            </div>
 
 		          </div>
+				  <button class="showy" type="submit" aria-haspopup="true">
+					   Send Message
+					   <span><img class="flecha" src="img/flecha.svg"></span>
+				  </button>
 	          </form>
 
 
 	          <!--      Aqui empieza el Modal    -->
 
 
-			<button class="showy" id="enviar" aria-haspopup="true">
-				 Send Message
-			     <span><img class="flecha" src="img/flecha.svg"></span>
-			</button>
 
 			<div class="mask" role="dialog"></div>
 			<div class="modal" role="alert">
@@ -643,6 +643,7 @@
 <script src="xjs/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="js/ScrollMagic.js"></script>
 <script type="text/javascript" src="js/animation.gsap.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 <!-- <script type="text/javascript" src="js/debug.addIndicators.js"></script> -->
 
 
@@ -767,11 +768,11 @@ var scene2 = new ScrollMagic.Scene({
 </script>
 
 
+<script src="xjs/modal.js"></script>
 <script src="xjs/pushy.min.js"></script>
 <script src="xjs/script.js"></script> 
 <script src="xjs/target.js"></script>
 <script src="xjs/top.js"></script>
-<script src="xjs/modal.js"></script>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.7/lottie.js"></script>	

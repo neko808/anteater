@@ -1,7 +1,11 @@
 /*    Form Styles   */
 
+.app-form{
+	width: 300px;
+}
+
 .app-form-group{
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 
 .app-form-group1 {
@@ -10,7 +14,7 @@
   width: 300px;
   position: relative;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 select::-ms-expand { display: none; }
@@ -120,17 +124,21 @@ select{
 
 
 .app-form-control2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
   box-sizing: border-box;
   max-width: 300px;
   width: 100%;
+  height: 100px;
   padding: 14px 20px;
   background: none;
-  border: none;
-  border-bottom: 1px solid #6e75b4;
   color: #959ffa;
   font-size: 14px;
   outline: none;
   transition: border-color .2s;
+  border: 1px solid #6e75b4;
+  border-radius: 4px;
 }
 
 .app-form-control2::-webkit-input-placeholder {
@@ -150,7 +158,7 @@ select{
 }
 
 .app-form-control2:focus {
-  border-bottom-color: #fff;
+  border: 1px solid #fff;
 }
 
 .box3{
@@ -909,5 +917,29 @@ header .xword .world{
 	height: auto;
 }
 
+/*     Estilos de Prueba      */
+
+.arrowx{
+	background-color: white;
+	color: black;
+}
+
+input.error {
+    border:1px solid red;
+}
+span.arrow {
+    height:30px;
+}
+label.error {  
+    color:white;
+    padding:5px 10px;
+    font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+}
+
+textarea.error{
+	border:1px solid red;
+}
 
 

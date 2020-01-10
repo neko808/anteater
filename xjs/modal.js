@@ -3,6 +3,7 @@
 $(function () {
   $("form[name='formulario-contacto']").validate({
     // Specify validation rules
+
     rules: {
       choose: "required",
       name: "required",
@@ -23,6 +24,7 @@ $(function () {
       company: "Please enter your company",
       message: "Please enter your message",
     },
+
 
     submitHandler: function (form, event) {
       event.preventDefault();

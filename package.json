@@ -1,0 +1,25 @@
+{
+  "name": "anteater-landing",
+  "version": "1.0.0",
+  "description": "Landing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/emmauel/anteater-landing.git"
+  },
+  "author": "Alex Lopez",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/emmauel/anteater-landing#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}

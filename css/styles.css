@@ -328,6 +328,18 @@ ul.ball li {
   z-index: 10;
 }
 
+.claroshop{
+	width: 140px;
+	opacity: 0.6;
+}
+
+.claroshop-azul{
+  display: none;
+  position: absolute;
+  width: 140px;
+  z-index: 10;
+}
+
 .telmex{
 	width: 120px;
 	opacity: 0.6;
@@ -377,14 +389,14 @@ ul.ball li {
 }
 
 .banorte{
-	width: 140px;
+	width: 144px;
 	opacity: 0.6;
 }
 
 .banorte-azul{
   display: none;
   position: absolute;
-  width: 140px;
+  width: 144px;
   z-index: 10;
 }
 
@@ -406,7 +418,8 @@ ul.ball li {
 .logos-flex-item a:hover .lacomer-azul,
 .logos-flex-item a:hover .televisa-azul,
 .logos-flex-item a:hover .banorte-azul,
-.logos-flex-item a:hover .tpj-azul
+.logos-flex-item a:hover .tpj-azul,
+.logos-flex-item a:hover .claroshop-azul
 {
 	display: block;
 }
@@ -837,6 +850,19 @@ ul.ball li {
   transform: scale(0.9);
 }
 
+#move span{
+	position: relative;
+	left: 0;
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
+	transition: 0.2s ease-in-out;
+}
+
+#move:hover span{
+	left: 5px;
+}
+
 .mask {
   position: fixed;
   top: 0;
@@ -891,10 +917,6 @@ ul.ball li {
 
 .antena img{
 	width: 100px;
-}
-
-.showy:hover span{
-	left: 5px;
 }
 
 /*.disabled {

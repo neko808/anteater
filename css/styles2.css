@@ -873,7 +873,7 @@ header .xword .world{
 	display: flex;
 	justify-content: center;
 	top: 90px;
-	z-index: 100;
+	z-index: 10;
 }
 
 .slogan p{

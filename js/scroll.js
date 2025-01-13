@@ -9,11 +9,13 @@ function scrollFunction() {
     document.getElementById("header").classList.add('water');
     document.getElementById("header").classList.add('basic');
     document.getElementById("header").classList.add('fondo');
+    document.getElementById("header").classList.add('nav-up');
   } else {
     document.getElementById("header").classList.remove('minum');
     document.getElementById("header").classList.remove('water');
     document.getElementById("header").classList.remove('basic');
     document.getElementById("header").classList.remove('fondo');
+    document.getElementById("header").classList.remove('nav-up');
   }
 }
 

@@ -152,6 +152,7 @@
 				     </a>
 <!-- 				     <a href="#"><li class="different">Developer</li></a> -->
 				     <a href="#contactus"><li class="different">Contact us</li></a>
+				     <a href="views/pricing.html"><li class="different">Pricing</li></a>
 <!-- 				   	 <a href="pricing.html"><li class="different">Pricing</li></a> -->
 				   	 
 				   </ul>
@@ -209,7 +210,8 @@
 
 
 
-		<div id="aeb" class="aeb"></div>
+		<!-- <div id="aeb" class="aeb"></div> -->
+		<img class="spider" src="img/indexing.png" alt="indexing">
 
 
 
@@ -265,9 +267,7 @@
 	<div class="spacer2"></div>
 </div>
 
-<div class="wrapper9">
-	<img class="rPhoto" src="img/mac.svg" alt="mac" data-parallax='{"y" : -80, "from-scroll":1300, "distance": 0}'/>
-</div>
+
 
 
 
@@ -721,6 +721,7 @@
 
 						// build scene
 						var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 10, tweenChanges: true})
+										.addIndicators({name: "Animation trigger"})
 										.setTween(tween)
 										.addTo(controller);
 
@@ -787,8 +788,7 @@ var scene2 = new ScrollMagic.Scene({
 <script src="xjs/target.js"></script>
 <script src="xjs/top.js"></script>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.7/lottie.js"></script>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.10/lottie.js"></script>
 <script type="text/javascript" src="xjs/index.js"></script>
 
 </body>

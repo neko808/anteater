@@ -26,6 +26,12 @@ main {
 	background: transparent;
 }
 
+.spider{
+	max-width: 410px;
+	width: 100%;
+	height: auto;
+}
+
 .tamano{
 	width: 90px;
 }

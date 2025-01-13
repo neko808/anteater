@@ -120,6 +120,7 @@ ul {
 .rPhoto{
   width: 400px;
   position: absolute;
+  top: 100px;
   right: 0;
 }
 
